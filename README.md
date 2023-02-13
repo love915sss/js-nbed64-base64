@@ -16,9 +16,9 @@
 + [README-KR.md] **한국어 버전입니다**
 
 [README.md]: https://github.com/love915sss/js-Nbed64-base64/README.md
-[README-EN.md]: https://github.com/love915sss/js-Nbed64-base64/README-EN.md
-[README-JP.md]: https://github.com/love915sss/js-Nbed64-base64/README-JP.md
-[README-KR.md]: https://github.com/love915sss/js-Nbed64-base64/README-KR.md
+[README-EN.md]: https://github.com/love915sss/js-Nbed64-base64/README.md
+[README-JP.md]: https://github.com/love915sss/js-Nbed64-base64/README.md
+[README-KR.md]: https://github.com/love915sss/js-Nbed64-base64/README.md
 
 
 
@@ -63,19 +63,19 @@
 
 *备注：动态加密是(传统)对称加密的升级版，但本质上，它还是对称加密，但它比传统的对称加密更加安全可靠。如果您对此有研究兴趣，请您移步 *[动态加密的作用和原理]*了解更多详情。*
 
-[nbed64StringEncryptEx()]: https://github.com/love915sss/js-Nbed64-base64/
-[nbed64StringDecryptEx()]: https://github.com/love915sss/js-Nbed64-base64/
-[nbed64BinaryEncryptEx()]: https://github.com/love915sss/js-Nbed64-base64/
-[nbed64BinaryDecryptEx()]: https://github.com/love915sss/js-Nbed64-base64/
-[nbed64StringEncrypt()]: https://github.com/love915sss/js-Nbed64-base64/
-[nbed64StringDecrypt()]: https://github.com/love915sss/js-Nbed64-base64/
-[nbed64BinaryEncrypt()]: https://github.com/love915sss/js-Nbed64-base64/
-[nbed64BinaryDecrypt()]: https://github.com/love915sss/js-Nbed64-base64/
-[nbed64StringEncode()]: https://github.com/love915sss/js-Nbed64-base64/
-[nbed64StringDecode()]: https://github.com/love915sss/js-Nbed64-base64/
-[nbed64BinaryEncode()]: https://github.com/love915sss/js-Nbed64-base64/
-[nbed64BinaryDecode()]: https://github.com/love915sss/js-Nbed64-base64/
-[动态加密的作用和原理]: https://github.com/love915sss/js-Nbed64-base64/
+[nbed64StringEncryptEx()]: https://github.com/love915sss/js-Nbed64-base64/#01-nbed64stringencryptex
+[nbed64StringDecryptEx()]: https://github.com/love915sss/js-Nbed64-base64/#02-nbed64StringDecryptEx
+[nbed64BinaryEncryptEx()]: https://github.com/love915sss/js-Nbed64-base64/#03-nbed64BinaryEncryptEx
+[nbed64BinaryDecryptEx()]: https://github.com/love915sss/js-Nbed64-base64/#04-nbed64BinaryDecryptEx
+[nbed64StringEncrypt()]: https://github.com/love915sss/js-Nbed64-base64/#05-nbed64StringEncrypt
+[nbed64StringDecrypt()]: https://github.com/love915sss/js-Nbed64-base64/#06-nbed64StringDecrypt
+[nbed64BinaryEncrypt()]: https://github.com/love915sss/js-Nbed64-base64/#07-nbed64BinaryEncrypt
+[nbed64BinaryDecrypt()]: https://github.com/love915sss/js-Nbed64-base64/#08-nbed64BinaryDecrypt
+[nbed64StringEncode()]: https://github.com/love915sss/js-Nbed64-base64/#09-nbed64StringEncode
+[nbed64StringDecode()]: https://github.com/love915sss/js-Nbed64-base64/#10-nbed64StringDecode
+[nbed64BinaryEncode()]: https://github.com/love915sss/js-Nbed64-base64/#11-nbed64BinaryEncode
+[nbed64BinaryDecode()]: https://github.com/love915sss/js-Nbed64-base64/#12-nbed64BinaryDecode
+[动态加密的作用和原理]: https://github.com/love915sss/js-Nbed64-base64/#动态加密的作用和原理
 
 
 # 相关链接
