@@ -21,9 +21,10 @@
 [README-KR.md]: https://github.com/love915sss/js-Nbed64-base64/README-KR.md
 
 
-# Nbed64的的设计初衷与特性
 
-1. Nbed64是Network Bridge Encrypt Decrypt Base64的缩写，它是一套通用的、开源的、跨语言的、跨平台的卓越加密方案库。这套库的算法最早由合肥网桥网络科技的CEO设计于2014年，当初仅有C++一个版本，随后在其公司的生产环境中不断扩充和迭代，发展成了今天的多语种版。因此nb指的就是网桥科技，ed指的是加密和解密，64指的是该算法基于Base64编码框架。请不要误以为nbed意指'非对称的...'，这样理解是错误的！强调一下， Nbed64是一套对称的加密方案，以及升级版的对称加密方案，人们很喜欢称之为：动态加密方案！后文将简称为：加解密库。
+# Nbed64的设计初衷与特性
+
+1. Nbed64是Network Bridge Encrypt Decrypt Base64的缩写，它是一套通用的、开源的、跨语言的、跨平台的卓越加密方案库。这套库的算法最早由合肥网桥网络科技的CEO设计于2014年，当初仅有C++一个版本，随后在其公司的生产环境中不断扩充和迭代，发展成了今天的多语种版。因此nb指的就是网桥科技，ed指的是加密和解密，64指的是该算法基于Base64编码框架。请不要误以为nbed意指'非对称的...'，这样理解是错误的！强调一下， Nbed64是一套对称的加密方案，以及升级版的对称加密方案，人们很喜欢称之为：动态加密方案！后文将统称为：加解密库。
 
 2. Nbed64的初衷是打造一套轻量级通用性的可读性加密方案。在Nbed64问世之前，市面上早就不缺对称加密算法，像AES、DES、TDEA、RC4、RC5等...已如雷贯耳，那么设计Nbed64的意义在哪里？答案是：可读性 + 通用性 + 轻量级。传统加密算法均有一个共性：主要服务于二进制数据安全。加密的结果不能字符化，而不能字符化就意味着：没有输入性，也没有可读性，不方便打印，不方便调试，等等...这是不利于现代可视化交互的，尤其像JS、PHP等脚本语言操作二进制很不方便！怎么办呢，人们通常有两个选择：1.转换成十六进制文本，2.转换成Base64文本。于是，网上到处都是AES、DES转Base64的帖子。您看，转了一圈，问题又回来了----那么我们为什么不直接使用Base64框架来加密呢？为什么要脱裤子放屁呢？！何况，传统加密方案在不同语言、不同平台下的使用成本各异，在很多场景中并不能开箱即用。这，就是作者设计Nbed64的初衷！
 
@@ -187,7 +188,7 @@ $ npm install --save js-nbed64
 
 
 
-# 调用文档与DEMO
+# 函数原型 && DEMO
 
 ## 01. nbed64StringEncryptEx
 
@@ -294,8 +295,8 @@ DEMO：
 	// console.log -> 这是动态加密的结果: a0tdkmEjI-6aJlp-aU6wWwtcfmuCBDg-GcRAvSfTu35NFDgIGCAwQFhIWKgX
 	console.log('再来一次对比试试--: ' + nbed64BinaryEncryptEx(mp4, key));
 	// console.log -> 再来一次对比试试--: a0tsO0Go7LbVeH1MaqljRsUo-uC0TOwjIGjCJEgtTwoU5zgIGCAwQFBAUKCf
-	let TextDec = nbed64BinaryDecryptEx(base64, key);
-	console.log('这是动态解密的结果: ' + TextDec);
+	let byteArray = nbed64BinaryDecryptEx(base64, key);
+	console.log('这是动态解密的结果: ' + byteArray);
 	// console.log -> 这是动态解密的结果: 255,254,253,252,251,250,249,248,247,246
  */
 ```
@@ -329,8 +330,8 @@ DEMO：
 	// console.log -> 这是动态加密的结果: a0tdkmEjI-6aJlp-aU6wWwtcfmuCBDg-GcRAvSfTu35NFDgIGCAwQFhIWKgX
 	console.log('再来一次对比试试--: ' + nbed64BinaryEncryptEx(mp4, key));
 	// console.log -> 再来一次对比试试--: a0tsO0Go7LbVeH1MaqljRsUo-uC0TOwjIGjCJEgtTwoU5zgIGCAwQFBAUKCf
-	let TextDec = nbed64BinaryDecryptEx(base64, key);
-	console.log('这是动态解密的结果: ' + TextDec);
+	let byteArray = nbed64BinaryDecryptEx(base64, key);
+	console.log('这是动态解密的结果: ' + byteArray);
 	// console.log -> 这是动态解密的结果: 255,254,253,252,251,250,249,248,247,246
 ```
 
@@ -440,8 +441,8 @@ DEMO：
 	// console.log -> 这是对称加密的结果: 0NHS_fLz7O3qoz
 	console.log('再来一次对比试试  : ' + nbed64BinaryEncrypt(mp3, key, isRFC4648));
 	// console.log -> 再来一次对比试试  : 0NHS_fLz7O3qoz
-	let TextDec = nbed64BinaryDecrypt(base64, key);
-	console.log('这是对称解密的结果: ' + TextDec);
+	let byteArray = nbed64BinaryDecrypt(base64, key);
+	console.log('这是对称解密的结果: ' + byteArray);
 	// console.log -> 155,154,153,152,151,150,149,148,147,146
 ```
 
@@ -474,8 +475,8 @@ DEMO：
 	// console.log -> 这是对称加密的结果: 0NHS_fLz7O3qoz
 	console.log('再来一次对比试试  : ' + nbed64BinaryEncrypt(mp3, key, isRFC4648));
 	// console.log -> 再来一次对比试试  : 0NHS_fLz7O3qoz
-	let TextDec = nbed64BinaryDecrypt(base64, key);
-	console.log('这是对称解密的结果: ' + TextDec);
+	let byteArray = nbed64BinaryDecrypt(base64, key);
+	console.log('这是对称解密的结果: ' + byteArray);
 	// console.log -> 155,154,153,152,151,150,149,148,147,146
 ```
 
@@ -572,8 +573,8 @@ DEMO：
 	let base64 = nbed64BinaryEncode(image, isRFC4648);
 	console.log('这是Base64编码的结果: ' + base64);
 	// console.log -> 这是Base64编码的结果: NzY1NDMyMTAvLg
-	let TextDec = nbed64BinaryDecode(base64);
-	console.log('这是Base64解码的结果: ' + TextDec);
+	let byteArray = nbed64BinaryDecode(base64);
+	console.log('这是Base64解码的结果: ' + byteArray);
 	// console.log -> 这是Base64解码的结果: 55,54,53,52,51,50,49,48,47,46
 
 ```
@@ -603,10 +604,47 @@ DEMO：
 	let base64 = nbed64BinaryEncode(image, isRFC4648);
 	console.log('这是Base64编码的结果: ' + base64);
 	// console.log -> 这是Base64编码的结果: NzY1NDMyMTAvLg
-	let TextDec = nbed64BinaryDecode(base64);
-	console.log('这是Base64解码的结果: ' + TextDec);
+	let byteArray = nbed64BinaryDecode(base64);
+	console.log('这是Base64解码的结果: ' + byteArray);
 	// console.log -> 这是Base64解码的结果: 55,54,53,52,51,50,49,48,47,46
 ```
 
+
+# 扩展知识阅读
+
+## 动态加密的作用和原理？
+
++ 动态加密存在的作用和意义就是为了：保护Key，防逆向。注意，此处所指的防逆与非对称加密算法的本质不同。对称加密均有个缺陷：攻击者可通过网络抓包分析来逆向推算原始的Key! 如此一来，即使Key通过服务端非对称加密分发也仍然失去意义。简单的讲就是, 无论你把key保护的多好也没有意义! 
+
++ 通常, 非对称传输密钥的目的是保护服务端分发Key的过程，却无法保护Key的计算结果，要想保护Key的计算结果以及Key本身不被逆向，就需要掩码算法的参与。简称：动态加密！此过程用文字描述比较抽象难懂，我们直接看推导吧：假设，已知加密为减法，解密为加法(注: 可互换, 这不是重点)，当攻击者输入了'A'，加密过程为：data=65, key=10，res=data-key, 结果=55，攻击者抓包可得到55，'A'已知为65，逆向所得：key = 65 -55，于是Key=10 被逆向了。
+
++ 您可能会问，若我的Data很长，key也很长，还能逆向吗？答案是：能，原理不变！若我们把加减法改成位异或呢？没用，原理不变，这里用加减法仅为了方便推导。好了，现在我们来看看掩码是如何保护Key的--假定掩码为128，当攻击者输入了'A'，加密过程为：data=65, mask=128, key=10，则 res = data - (mask | key) , 结果=183，已知位或运算不可逆向, 现在key还能被逆向吗? 答案是: 不能! 当然不能! 
+
++ 读到这里, 您可能疑惑掩码参与为何又叫动态加密呢? 因为通常掩码就是随机数组, 且与被加密数据合并, 细心的读者可能已经明白-----data不变, Key也不变, 但加密后的结果却每次都变, 因为mask每次都会变呀! 每次都变, 还不够动态吗?! 如此一来, 不但key安全了, res也更安全啦!
+
++ 理论上，除量子密钥分发以外，不存在绝对的安全。密钥通过服务端分发的过程必然需要通过网络传输，这便给了攻击者抓包的机会，您可能会说，我通过非对称加密后再传输key不就安全了吗？答案是NO！攻击者可以通过代理人伪造证书来欺骗服务端，从而拿到key。您可能又会说，那我就不传输，直接在APP里面写死，这样抓包不到总安全了吧？答案还是NO！首先，不论key从服务端分发也罢，在APP内置也罢，如果您使用的是非动态加密，那么不好意，攻击者直接抓加密结果包就能逆向推导出key！其次即使使用动态加密，安不安全，那要问您给APP套的壳够不够硬？！至少理论上是没有绝对硬度的壳！
+
++ 现在，您是否非常的疑惑？既然怎么折腾都不安全，那我们还折腾个啥？！这，是个好问题！答案很简单：一切都是为了增加攻击者的代价和成本！虽然任何手段都非绝对安全，但毫无疑问，任何手段都会增加破译的成本！防护手段的叠加也必然会叠加破译的代价，当攻击者破译所付出的代价，远大与他的收益时，谁还会做亏本的买卖？他自然也就放弃了！当你破译某个系统可以获利一百万，但代价却要一百亿，除了放弃, 你还能怎样？！！！通常而言，破译的成本都远大于加密的成本，这，就是加密的作用和意义！
+
+
+
+## RFC4648是什么？
++ 它是一套保障URL编码安全的规范。众所周知，在Ajax请求中，'/'、'+'均不可在GET参数中出现，否则需要URL编码。在URL规范中，'/'代表路径，'+'代表空格，'='代表解析，但Base64映射表中偏偏包含了这些字符，而采用RFC4648规范就可以解决这个问题。怎么解决？很简单：用'-'替换原来的'+'，用'_'替换原来的'/'，且尾部不填充'='
+
++ 于是大家在国际上约定好都使用这个方案，这，便是Base64的RFC4648编码规范的由来。用一句话来讲就是：大家先约定一个标准，然后都遵循这个标准，目的是为了解决问题。
+
+
+
+## 在JavsScript中，String的默认编码是UTF-16，还是UTF-8？
++ 在ECMAScript规范和MDN中都明确指出：String为UTF-16编码，实事上也的确是UTF-16。因此，String类型中存放的任意字符均在内存中占用2个字节，不论英文、中文、德文、日文、阿拉伯文...均为2个字节。
+
+## UTF-16的优点和缺点
++ UTF-16的优点：非英文场景中比UTF-8节省内存，以中文为例，UTF-8至少需要3个字节，而UTF-16只用两个字节。
+
++ UTF-16的缺点：不兼容ASCII编码规范，此为强调重点!这意味着表示英文字符也必须使用双字节，高位空比特[0,0,0,0,0,0,0,0]是必须存在的，任何时间，都不能因压缩需求而丢弃高位中的空字节！！！否则将会造成不可逆转的解码错误（此处划重点, 简单点讲就是: 会乱码，而且是不可逆的乱码）！
+
++ 注意事项：Ajax请求会根据页面编码类型的定义而自动转换，也就是您在HTML中定义了什么编码，浏览器就会自动转换。所以后端收到的字符串通常会是UTF-8，但，请不要误以为string类型默认编码就是UTF-8，这很重要！UTF-8表示中文需3个字节，UTF-16表示中文只需2个字节。
+
++ 建议：UTF-16可以减少网络传输成本，但前提是您熟悉UTF-16编码并能运用自如，否则，请使用简易通用的UTF-8。本知识点主要面向对本源码有二次变种开发的开发者，无二次开发需求的使用者可不必掌握。谢谢！！！
 
 
