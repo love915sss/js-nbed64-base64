@@ -67,7 +67,7 @@
 	* [nbed64BinaryEncode()]  Standard Base64 encoding, Used as encoding binary, Support RFC4648 security specification
 	* [nbed64BinaryDecode()]  Standard Base64 decoding, Used as decode binary, Support RFC4648 security specification
 
-+ *Statement: Dynamic encryption is an upgraded version of (traditional) symmetric encryption, But in essence, it is symmetric encryption, But in essence, it is still symmetric encryption, However, dynamic encryption is more secure and reliable than traditional symmetric encryption. If you are interested in this research, Please move * [Benefits and principles of dynamic encryption] * Learn more. *
++ *Statement: Dynamic encryption is an upgraded version of (traditional) symmetric encryption, But in essence, it is symmetric encryption, But in essence, it is still symmetric encryption, However, dynamic encryption is more secure and reliable than traditional symmetric encryption. If you are interested in this research* Goto  [Benefits and principles of dynamic encryption] Learn more. 
 
 [nbed64StringEncryptEx()]: https://github.com/love915sss/js-nbed64-base64/blob/master/#01-nbed64stringencryptex
 [nbed64StringDecryptEx()]: https://github.com/love915sss/js-nbed64-base64/blob/master/#02-nbed64StringDecryptEx
