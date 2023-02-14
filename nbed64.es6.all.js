@@ -5,7 +5,9 @@
  * Author Blog: https://blog.csdn.net/qq_16661383?type=blog
  */
 
-
+/**
+ * 有完整的注释信息 && 兼容ES6引用模式
+ */
 
 /**
  * Base64对二进制数据加密（ 本函数与 nbed64BinaryDecrypt()为一对 ）
