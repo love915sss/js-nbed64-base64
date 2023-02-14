@@ -345,7 +345,7 @@ DEMO：
 
 ## 05. nbed64StringEncrypt
 
-### nbed64StringEncrypt() Be used as Symmetrical encryption string, The data remains unchanged, The key remains unchanged, **Encryption results in Base64 format也不变**
+### nbed64StringEncrypt() Be used as Symmetrical encryption string, The data remains unchanged, The key remains unchanged, **The encryption result remains the same, changeless**
 
 Function Prototype:
 
@@ -421,7 +421,7 @@ DEMO：
 
 ## 07 nbed64BinaryEncrypt
 
-### nbed64BinaryEncrypt() Be used as Symmetrically encrypted binary, The data remains unchanged, The key remains unchanged, **Encryption results in Base64 format也不变**
+### nbed64BinaryEncrypt() Be used as Symmetrically encrypted binary, The data remains unchanged, The key remains unchanged, **The encryption result remains the same, changeless**
 
 Function Prototype:
 
