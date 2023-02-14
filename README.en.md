@@ -67,7 +67,7 @@
 	* [nbed64BinaryEncode()]  Standard Base64 encoding, Used as encoding binary, Support RFC4648 security specification
 	* [nbed64BinaryDecode()]  Standard Base64 decoding, Used as decode binary, Support RFC4648 security specification
 
-*Statement: Dynamic encryption is an upgraded version of (traditional) symmetric encryption, But in essence, it is symmetric encryption, But in essence, it is still symmetric encryption, However, dynamic encryption is more secure and reliable than traditional symmetric encryption. If you are interested in this research, Please move * [Benefits and principles of dynamic encryption] * Learn more. *
++ *Statement: Dynamic encryption is an upgraded version of (traditional) symmetric encryption, But in essence, it is symmetric encryption, But in essence, it is still symmetric encryption, However, dynamic encryption is more secure and reliable than traditional symmetric encryption. If you are interested in this research, Please move * [Benefits and principles of dynamic encryption] * Learn more. *
 
 [nbed64StringEncryptEx()]: https://github.com/love915sss/js-nbed64-base64/blob/master/#01-nbed64stringencryptex
 [nbed64StringDecryptEx()]: https://github.com/love915sss/js-nbed64-base64/blob/master/#02-nbed64StringDecryptEx
@@ -96,7 +96,7 @@
 + [JAVA-Nbed64] Authors use JAVA Language version
 + [Python-Nbed64] Authors use Python Language version
 
-*Statement: Because writing Demo and README requires a lot of time and effort, Therefore, the author cannot Push all the above language versions in a short time. but don't worry, The author will not relax the schedule and change the plan,  It is only a matter of time to fill the vacancy.*
++ *Statement: Because writing Demo and README requires a lot of time and effort, Therefore, the author cannot Push all the above language versions in a short time. but don't worry, The author will not relax the schedule and change the plan,  It is only a matter of time to fill the vacancy.*
 
 [c-Nbed64]: https://github.com/love915sss/c-Nbed64-base64/
 [Go-Nbed64]: https://github.com/love915sss/Go-Nbed64-base64/
@@ -115,7 +115,7 @@
 ```shell
 $ npm install --save js-nbed64
 ```
-*If you cannot install through npm, it doesn't matter. Any of the following methods will have the same effect...*
++ *If you cannot install through npm, it doesn't matter. Any of the following methods will have the same effect...*
 
 ## Include
 
@@ -135,7 +135,7 @@ Local... You need to download and decompress nbed64.zip on GitHub or official we
 <script src="https://nbed64.oss-cn-hongkong.aliyuncs.com/nbed64.se5.min.js">/*Compressed version---Used in production environment*/</script>
 ```
 
-*Although the above embedding methods are very convenient, But it is also easy to pollute ` window`，So，It is recommended that you use the following ES6 standard embedding mode...*
++ *Although the above embedding methods are very convenient, But it is also easy to pollute ` window`，So，It is recommended that you use the following ES6 standard embedding mode...*
 
 ### As an ES6 Module，browser || nodejs || uin-app || APICloud
 
@@ -145,7 +145,7 @@ Local... You need to download and decompress nbed64.zip on GitHub or official we
 	import * as nbed64 from 'Nbed64 .es6.min';
 ```
 
-*or*
++ *or*
 
 ```javascript
 	import {
@@ -173,7 +173,7 @@ Local... You need to download and decompress nbed64.zip on GitHub or official we
 	import * as nbed64 from 'https://nbed64.oss-cn-hongkong.aliyuncs.com/Nbed64 .es6.min';
 ```
 
-*or*
++ *or*
 
 ```javascript
 	import {
