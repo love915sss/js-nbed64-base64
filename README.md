@@ -11,7 +11,7 @@
 　　　　KR : *자술문건은 다음과 같은 언어를 지원하는데 그중 중국어는 저자의 모국어이기에 표현의견상이가 가장 적다.중국어를 읽을 수 있는 능력이 있다면 가능한 한 중국어판 README.md를 읽으십시오.감사합니다 ! ! !*
 
 + [README.md] **这是简体中文版（默认）**
-<<<<<<< HEAD
+
 + [README-EN.md] **This is the English version**
 + [README-JP.md] **これは日本語版です**
 + [README-KR.md] **한국어 버전입니다**
@@ -20,7 +20,7 @@
 [README-EN.md]: https://github.com/love915sss/js-Nbed64-base64/README.md
 [README-JP.md]: https://github.com/love915sss/js-Nbed64-base64/README.md
 [README-KR.md]: https://github.com/love915sss/js-Nbed64-base64/README.md
-=======
+
 + [README.EN.md] **This is the English version**
 + [README.JP.md] **これは日本語版です**
 + [README.KR.md] **한국어 버전입니다**
@@ -29,7 +29,7 @@
 [README.EN.md]: https://github.com/love915sss/js-Nbed64-base64/README.md
 [README.JP.md]: https://github.com/love915sss/js-Nbed64-base64/README.md
 [README.KR.md]: https://github.com/love915sss/js-Nbed64-base64/README.md
->>>>>>> da5acd1 (first upload)
+
 
 
 
@@ -55,15 +55,15 @@
 # Nbed64加解密方案的主要能力
 ### Nbed64共提供了12个API，分为3组，每组4个API。分别为：
 1. 动态加解密API组
-	* [nbed64StringEncryptEx()]  动态加密字符串，数据不变，密钥不变，**加密结果不重复**
+	* [nbed64StringEncryptEx()]  动态加密字符串，数据不变，密钥不变，**但加密结果不重复，也就是每次执行的结果都会变**
 	* [nbed64StringDecryptEx()]  动态解密字符串，与 nbed64StringEncryptEx()是一对
-	* [nbed64BinaryEncryptEx()]  动态加密二进制，数据不变，密钥不变，**加密结果不重复**
+	* [nbed64BinaryEncryptEx()]  动态加密二进制，数据不变，密钥不变，**但加密结果不重复，也就是每次执行的结果都会变**
 	* [nbed64BinaryDecryptEx()]  动态解密二进制，与 nbed64BinaryEncryptEx()是一对
 
 2. 对称加解密API组
-	* [nbed64StringEncrypt()]  对称加密字符串，数据不变，密钥不变，**加密结果不变**
+	* [nbed64StringEncrypt()]  对称加密字符串，数据不变，密钥不变，**加密结果也不变，固定的，不变的**
 	* [nbed64StringDecrypt()]  对称解密字符串，与 nbed64StringEncrypt()是一对
-	* [nbed64BinaryEncrypt()]  对称加密二进制，数据不变，密钥不变，**加密结果不变**
+	* [nbed64BinaryEncrypt()]  对称加密二进制，数据不变，密钥不变，**加密结果也不变，固定的，不变的**
 	* [nbed64BinaryDecrypt()]  对称解密二进制，与 nbed64BinaryEncrypt()是一对
 
 3. 标准Base64编解码API组
@@ -203,7 +203,7 @@ $ npm install --save js-nbed64
 
 ## 01. nbed64StringEncryptEx
 
-### nbed64StringEncryptEx() 用于 动态加密字符串，数据不变，密钥不变，**加密结果不重复**
+### nbed64StringEncryptEx() 用于 动态加密字符串，数据不变，密钥不变，**但加密结果不重复**
 
 函数原型：
 
@@ -218,7 +218,7 @@ $ npm install --save js-nbed64
  * 的默认编码为UTF-16，但UTF-16并不友好，很多编程语言和服务端环境都不支持UTF-16。
 =======
  * JS的默认编码为UTF-16，但UTF-16并不友好，很多编程语言和服务端环境都不支持UTF-16。
->>>>>>> da5acd1 (first upload)
+
  * @param {number} maskNumber 掩码的数量。缺省为：32，范围：32 - 65535。当值小于32时为32，大于65535时为65535。
  * @return string 加密结果
  */
@@ -284,7 +284,7 @@ DEMO：
 
 ## 03. nbed64BinaryEncryptEx
 
-### nbed64BinaryEncryptEx() 用于 动态加密二进制，数据不变，密钥不变，**加密结果不重复**
+### nbed64BinaryEncryptEx() 用于 动态加密二进制，数据不变，密钥不变，**但加密结果不重复**
 
 函数原型：
 
@@ -430,7 +430,7 @@ DEMO：
 
 ## 07 nbed64BinaryEncrypt
 
-### nbed64BinaryEncrypt() 用于 对称加密二进制，数据不变，密钥不变，**加密结果不变**
+### nbed64BinaryEncrypt() 用于 对称加密二进制，数据不变，密钥不变，**加密结果也不变**
 
 函数原型：
 
