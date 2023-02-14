@@ -5,6 +5,9 @@
  * Author Blog: https://blog.csdn.net/qq_16661383?type=blog
  */
 
+/**
+ * 有完整的注释信息 && 兼容ES5引用方法
+ */
 
 
 /**
