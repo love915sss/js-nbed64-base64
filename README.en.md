@@ -124,15 +124,15 @@ $ npm install --save js-nbed64
 Local... You need to download and decompress nbed64.zip on GitHub or official website, then...
 
 ```html
-<script src="nbed64.es5.all.js">/*完整版----研究环境时使用*/</script>
-<script src="nbed64.es5.min.js">/*迷你版----生产环境时使用*/</script>
+<script src="nbed64.es5.all.js">/* Full version - used in the research environment */</script>
+<script src="nbed64.es5.min.js">/* Compressed version - used in production environment */</script>
 ```
 
 … or Directly from CDN.In this way, you do not have to download and install.
 
 ```html
-<script src="https://nbed64.oss-cn-hongkong.aliyuncs.com/nbed64.se5.all.js">/*Full version----Used when studying the environment*/</script>
-<script src="https://nbed64.oss-cn-hongkong.aliyuncs.com/nbed64.se5.min.js">/*Compressed version---Used in production environment*/</script>
+<script src="https://nbed64.oss-cn-hongkong.aliyuncs.com/nbed64.se5.all.js">/* Full version - used in the research environment */</script>
+<script src="https://nbed64.oss-cn-hongkong.aliyuncs.com/nbed64.se5.min.js">/* Compressed version - used in production environment */</script>
 ```
 
 + *Although the above embedding methods are very convenient, But it is also easy to pollute ` window`，So，It is recommended that you use the following ES6 standard embedding mode...*
