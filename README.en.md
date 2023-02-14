@@ -205,13 +205,13 @@ Function Prototype:
 ```javascript
 /**
  * Nbed64 An upgraded version of string encryption, Short name: string dynamic encryption （ This function And nbed64StringDecryptEx() It's a pair )
- * @param {string} str Source data.
- * @param {string} key Theoretically, the length of the key is proportional to the difficulty of the reverse.
- * @param {boolean} isUtf8 Whether to use UTF-8 encoding format. The default value is true. If set to false, UTF-16 encoding is used.
+ * @param str {string} Source data.
+ * @param key {string} Theoretically, the length of the key is proportional to the difficulty of the reverse.
+ * @param isUtf8 {boolean} Whether to use UTF-8 encoding format. The default value is true. If set to false, UTF-16 encoding is used.
  * be careful:  This refers to the encoding before encryption, not the base64 encoding after encryption. Base64 does not need to be encoded. In other words, this parameter refers to the decrypted string encoding.
  * The default encoding of JS is UTF-16, but UTF-16 is not friendly. Many programming languages and server environments do not support UTF-16.
- * @param {number} maskNumber The number of masks. The default value is 32, Range: 32 - 65535. The lower limit is 32 and the upper limit is 65535.
- * @return string Encryption results in Base64 format
+ * @param maskNumber {number} The number of masks. The default value is 32, Range: 32 - 65535. The lower limit is 32 and the upper limit is 65535.
+ * @return {string} Encryption results in Base64 format
  */
 const nbed64StringEncryptEx = (str, key, isUtf8 = true, maskNumber = 32) => { ... }
 ```
@@ -245,10 +245,10 @@ Function Prototype:
 ```javascript
 /**
  * Base64 An upgraded version of string decrypted, Short name: Dynamic decryption strings（ This function And nbed64StringEncryptEx() It's a pair )
- * @param {string} base64str Encrypted string in base64 format
- * @param {string} key Please keep the settings exactly the same as the encryption settings.
- * @param {boolean} isUtf8 Whether to use UTF-8 encoding format. Please keep the settings exactly the same as the encryption settings.
- * @return string Decrypt result( UTF-16 encoding format ).be careful:  For ease of use, The decryption result will be automatically converted to the default encoding of the current program language, It is easy to use it out of the box, and the secondary coding is omitted. JS default encoding: UTF-16
+ * @param base64str {string} Encrypted string in base64 format
+ * @param key {string} Please keep the settings exactly the same as the encryption settings.
+ * @param isUtf8 {boolean} Whether to use UTF-8 encoding format. Please keep the settings exactly the same as the encryption settings.
+ * @return {string} Decrypt result( UTF-16 encoding format ).be careful:  For ease of use, The decryption result will be automatically converted to the default encoding of the current program language, It is easy to use it out of the box, and the secondary coding is omitted. JS default encoding: UTF-16
  */
 const nbed64StringDecryptEx = (base64str, key, isUtf8 = true) => { ... }
 ```
@@ -282,10 +282,10 @@ Function Prototype:
 ```javascript
 /**
  * Base64 An upgraded version of Binary decrypted,  Short name: Binary dynamic encryption（ This function And nbed64BinaryDecryptEx() It's a pair )
- * @param {ByteArray} byteArr Source data. Binary byte array, such as video, audio, pictures, files, etc.
- * @param {string} key Theoretically, the length of the key is proportional to the difficulty of the reverse.
- * @param {number} maskNumber The number of masks. The default value is 32, Range: 32 - 65535. The lower limit is 32 and the upper limit is 65535.
- * @return string Encryption results in Base64 format
+ * @param byteArr {ByteArray} Source data. Binary byte array, such as video, audio, pictures, files, etc.
+ * @param key {string} Theoretically, the length of the key is proportional to the difficulty of the reverse.
+ * @param maskNumber {number} The number of masks. The default value is 32, Range: 32 - 65535. The lower limit is 32 and the upper limit is 65535.
+ * @return {string} Encryption results in Base64 format
  */
 const nbed64BinaryEncryptEx = (byteArr, key, maskNumber = 32) => { ... }
 ```
@@ -318,9 +318,9 @@ Function Prototype:
 ```javascript
 /**
  * Base64 An upgraded version of Binary decrypted,  Short name: Binary dynamic decryption（ This function And nbed64BinaryEncryptEx() It's a pair )
- * @param {string} base64str Encrypted string in base64 format
- * @param {string} key Please keep the settings exactly the same as the encryption settings.
- * @return ByteArray Decrypt result
+ * @param base64str {string} Encrypted string in base64 format
+ * @param key {string} Please keep the settings exactly the same as the encryption settings.
+ * @return {ByteArray} Decrypt result
  */
 const nbed64BinaryDecryptEx = (base64str, key) =>  { ... }
 ```
@@ -353,13 +353,13 @@ Function Prototype:
 /**
 /**
  * Base64 Encrypt string（ This function And nbed64StringDecrypt() It's a pair )
- * @param {string} str Source data.
- * @param {string} key Theoretically, the length of the key is proportional to the difficulty of the reverse.
- * @param {boolean} isUtf8 Whether to use UTF-8 encoding format. The default value is true. If set to false, UTF-16 encoding is used.
+ * @param str {string} Source data.
+ * @param key {string} Theoretically, the length of the key is proportional to the difficulty of the reverse.
+ * @param isUtf8 {boolean} Whether to use UTF-8 encoding format. The default value is true. If set to false, UTF-16 encoding is used.
  * be careful: This refers to the encoding before encryption, not the base64 encoding after encryption. Base64 does not need to be encoded.In other words, this parameter refers to the decrypted string encoding.
  * The default encoding of JS is UTF-16, but UTF-16 is not friendly. Many programming languages and server environments do not support UTF-16.
- * @param {boolean} isRFC4648 Whether to adopt RFC4648 coding mapping specification, The default value is true. Base64 encoded by RFC4648 conforms to URL security, It can be used for HTTP protocol and Ajax requests.
- * @return string Encryption results in Base64 format
+ * @param isRFC4648 {boolean} Whether to adopt RFC4648 coding mapping specification, The default value is true. Base64 encoded by RFC4648 conforms to URL security, It can be used for HTTP protocol and Ajax requests.
+ * @return {string} Encryption results in Base64 format
  */
 const nbed64StringEncrypt = (str, key, isUtf8 = true, isRFC4648 = true) =>  { ... }
 ```
@@ -392,10 +392,10 @@ Function Prototype:
 ```javascript
 /**
  * Base64 Decrypt to string（ This function And nbed64StringEncrypt() It's a pair )
- * @param {string} base64str Encrypted string in base64 format
- * @param {string} key Please keep the settings exactly the same as the encryption settings.
- * @param {boolean} isUtf8 Whether to use UTF-8 encoding format. Please keep the settings exactly the same as the encryption settings.
- * @return string Decrypt result( UTF-16 encoding format ).be careful:  For ease of use, The decryption result will be automatically converted to the default encoding of the current program language, It is easy to use it out of the box, and the secondary coding is omitted. JS default encoding: UTF-16
+ * @param base64str {string} Encrypted string in base64 format
+ * @param key {string} Please keep the settings exactly the same as the encryption settings.
+ * @param isUtf8 {boolean} Whether to use UTF-8 encoding format. Please keep the settings exactly the same as the encryption settings.
+ * @return {string} Decrypt result( UTF-16 encoding format ).be careful:  For ease of use, The decryption result will be automatically converted to the default encoding of the current program language, It is easy to use it out of the box, and the secondary coding is omitted. JS default encoding: UTF-16
  */
 const nbed64StringDecrypt = (base64str, key, isUtf8 = true) =>  { ... }
 ```
@@ -428,10 +428,10 @@ Function Prototype:
 ```javascript
 /**
  * Base64 Encrypt binary data（ This function And nbed64BinaryDecrypt() It's a pair )
- * @param {ByteArray} byteArr Source data. Binary byte array, such as video, audio, pictures, files, etc.
- * @param {string} key Theoretically, the length of the key is proportional to the difficulty of the reverse.
- * @param {boolean} isRFC4648 Whether to adopt RFC4648 coding mapping specification, The default value is true. Base64 encoded by RFC4648 conforms to URL security, It can be used for HTTP protocol and Ajax requests.
- * @return string Encryption results in Base64 format
+ * @param byteArr {ByteArray} Source data. Binary byte array, such as video, audio, pictures, files, etc.
+ * @param key {string} Theoretically, the length of the key is proportional to the difficulty of the reverse.
+ * @param isRFC4648 {boolean} Whether to adopt RFC4648 coding mapping specification, The default value is true. Base64 encoded by RFC4648 conforms to URL security, It can be used for HTTP protocol and Ajax requests.
+ * @return {string} Encryption results in Base64 format
  */
 const nbed64BinaryDecrypt = (base64str, key) =>  { ... }
 ```
@@ -463,9 +463,9 @@ Function Prototype:
 ```javascript
 /**
  * Base64 Decrypt to binary data（ This function And nbed64BinaryEncrypt() It's a pair )
- * @param {string} base64str Encrypted string in base64 format
- * @param {string} key Please keep the settings exactly the same as the encryption settings.
- * @return ByteArray Decrypt result
+ * @param base64str {string} Encrypted string in base64 format
+ * @param key {string} Please keep the settings exactly the same as the encryption settings.
+ * @return {ByteArray} Decrypt result
  */
 const nbed64BinaryDecrypt = (base64str, key) =>  { ... }
 ```
@@ -497,12 +497,12 @@ Function Prototype:
 ```javascript
 /**
  * Nbed64  Encode string （ be careful: This is encoding, not encryption ， （ This function And nbed64StringDecode() It's a pair )
- * @param {string} str Source data.
- * @param {boolean} isUtf8 Whether to use UTF-8 encoding format. The default value is true. If set to false, UTF-16 encoding is used.
+ * @param str {string} Source data.
+ * @param isUtf8 {boolean} Whether to use UTF-8 encoding format. The default value is true. If set to false, UTF-16 encoding is used.
  * be careful: This refers to the encoding before encryption, not the base64 encoding after encryption. Base64 does not need to be encoded.In other words, this parameter refers to the decrypted string encoding.
  * The default encoding of JS is UTF-16, but UTF-16 is not friendly. Many programming languages and server environments do not support UTF-16.
- * @param {boolean} isRFC4648 Whether to adopt RFC4648 coding mapping specification, The default value is true. Base64 encoded by RFC4648 conforms to URL security, It can be used for HTTP protocol and Ajax requests.
- * @return string Encoding result
+ * @param isRFC4648 {boolean} Whether to adopt RFC4648 coding mapping specification, The default value is true. Base64 encoded by RFC4648 conforms to URL security, It can be used for HTTP protocol and Ajax requests.
+ * @return {string} Encoding result
  */
 const nbed64StringEncode = (str, isUtf8 = true, isRFC4648 = true) =>  { ... }
 ```
@@ -532,9 +532,9 @@ Function Prototype:
 ```javascript
 /**
  * Nbed64 Decode to string（ be careful: This is decoding, not decryption， （ This function And nbed64StringEncode() It's a pair )
- * @param {string} base64str Encrypted string in base64 format
- * @param {boolean} isUtf8 Whether to use UTF-8 encoding format. The default value is true. If set to false, UTF-16 encoding is used.
- * @return string Decrypt result( UTF-16 encoding format ).be careful:  For ease of use, The decryption result will be automatically converted to the default encoding of the current program language, It is easy to use it out of the box, and the secondary coding is omitted. JS default encoding: UTF-16
+ * @param base64str {string} Encrypted string in base64 format
+ * @param isUtf8 {boolean} Whether to use UTF-8 encoding format. The default value is true. If set to false, UTF-16 encoding is used.
+ * @return {string} Decrypt result( UTF-16 encoding format ).be careful:  For ease of use, The decryption result will be automatically converted to the default encoding of the current program language, It is easy to use it out of the box, and the secondary coding is omitted. JS default encoding: UTF-16
  */
 const nbed64StringDecode = (base64str, isUtf8 = true) =>  { ... }
 ```
@@ -564,9 +564,9 @@ Function Prototype:
 ```javascript
 /**
  * Nbed64 Encode binary data（ be careful: This is encoding, not encryption ， （ This function And nbed64BinaryDecode() It's a pair )
- * @param {ByteArray} byteArr Source data. Binary byte array, such as video, audio, pictures, files, etc.
- * @param {boolean} isRFC4648 Whether to adopt RFC4648 coding mapping specification, The default value is true. Base64 encoded by RFC4648 conforms to URL security, It can be used for HTTP protocol and Ajax requests.
- * @return string Encoding result
+ * @param byteArr {ByteArray} Source data. Binary byte array, such as video, audio, pictures, files, etc.
+ * @param isRFC4648 {boolean} Whether to adopt RFC4648 coding mapping specification, The default value is true. Base64 encoded by RFC4648 conforms to URL security, It can be used for HTTP protocol and Ajax requests.
+ * @return {string} Encoding result
  */
 const nbed64BinaryEncode = (byteArr, isRFC4648 = true) =>  { ... }
 ```
@@ -596,8 +596,8 @@ Function Prototype:
 ```javascript
 /**
  * Nbed64 Decode to binary data（ be careful: This is decoding, not decryption， （ This function And nbed64BinaryEncode() It's a pair )
- * @param {string} base64str Encrypted string in base64 format
- * @return ByteArray Decoding result
+ * @param base64str {string} Encrypted string in base64 format
+ * @return {ByteArray} Decoding result
  */
 const nbed64BinaryDecode = (base64str) => { ... }
 ```
