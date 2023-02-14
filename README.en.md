@@ -1,6 +1,6 @@
 # Nbed64.js
 
-# README 语言 || Language || 言語 || 언어
+## README 语言 || Language || 言語 || 언어
 
 　　　　CN : *自述文件支持以下语种，其中，中文为作者的母语，因此表达分歧最少！如果您有能力阅读中文，请尽量阅读中文版的 README.md。谢谢！！！* [Click To Read Chinese Version]
 
@@ -12,7 +12,7 @@
 
 　　　　KR : *자술문건은 다음과 같은 언어를 지원하는데 그중 중국어는 저자의 모국어이기에 표현의견상이가 가장 적다.중국어를 읽을 수 있는 능력이 있다면 가능한 한 중국어판 README.md를 읽으십시오.감사합니다 ! ! !* [Click To Read Korean Version]
 
-## 选择 || Choice || Выбор || せんたく || 선택
+## 请选择 || Choice || Выбор || せんたく || 선택
 
 + [README.md] **这是简体中文版（默认）** ---------------> [Click To Read Chinese Version]
 + [README.EN.md] **This is the English version** ---------> [Click To Read English Version]
