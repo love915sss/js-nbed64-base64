@@ -6,18 +6,24 @@
 
 　　　　EN : *The readme file supports the following languages, of which Chinese is the author's native language, so the expression differences are the least! If you have the ability to read Chinese, please try to read the Chinese version of README.md. thank you !!!*
 
+	RU :  Самоописанные документы поддерживают следующие языки, из которых китайский является родным языком автора, поэтому выражают наименьшее количество разногласий!  Если вы умеете читать по - китайски, попробуйте прочитать китайскую версию README.md.  Спасибо. 
+
 　　　　JP  : *Readmeファイルは次の言語をサポートしています、ここで、中国語は著者の母国語であり、そのため、表現の違いが最も少ない！中国語を読む能力があれば、できるだけ中国語版のREADME.mdを読んでください。ありがとうございます！！！*
 
 　　　　KR : *자술문건은 다음과 같은 언어를 지원하는데 그중 중국어는 저자의 모국어이기에 표현의견상이가 가장 적다.중국어를 읽을 수 있는 능력이 있다면 가능한 한 중국어판 README.md를 읽으십시오.감사합니다 ! ! !*
 
+
 + [README.md] **这是简体中文版（默认）** ---------------> [Click To Read Chinese Version]
 + [README.EN.md] **This is the English version** ---------> [Click To Read English Version]
++ [README.RU.md] **Это русская версия.** --------------> [Click To Read Russia Version]
 + [README.JP.md] **これは日本語版です** -----------------> [Click To Read Japanese Version]
 + [README.KR.md] **한국어 버전입니다** ------------------> [Click To Read Korean Version]
 
 [README.md]: https://github.com/love915sss/js-nbed64-base64/blob/master/README.md
 [Click To Read Chinese Version]: https://github.com/love915sss/js-nbed64-base64/blob/master/README.md
 [README.EN.md]: https://github.com/love915sss/js-nbed64-base64/blob/master/README.en.md
+[Click To Read English Version]: https://github.com/love915sss/js-nbed64-base64/blob/master/README.ru.md
+[README.EN.md]: https://github.com/love915sss/js-nbed64-base64/blob/master/README.ru.md
 [Click To Read English Version]: https://github.com/love915sss/js-nbed64-base64/blob/master/README.en.md
 [README.JP.md]: https://github.com/love915sss/js-nbed64-base64/blob/master/README.jp.md
 [Click To Read Japanese Version]: https://github.com/love915sss/js-nbed64-base64/blob/master/README.jp.md
