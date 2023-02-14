@@ -67,7 +67,7 @@
 	* [nbed64BinaryEncode()]  Standard Base64 encoding, Used as encoding binary, Support RFC4648 security specification
 	* [nbed64BinaryDecode()]  Standard Base64 decoding, Used as decode binary, Support RFC4648 security specification
 
-*Statement: Dynamic encryption is an upgraded version of (traditional) symmetric encryption, But in essence, it is symmetric encryption, But in essence, it is still symmetric encryption, However, dynamic encryption is more secure and reliable than traditional symmetric encryption. If you are interested in this research, Please move Benefits and principles of dynamic encryption Learn more. [GoTo]*
+*Statement: Dynamic encryption is an upgraded version of (traditional) symmetric encryption, But in essence, it is symmetric encryption, But in essence, it is still symmetric encryption, However, dynamic encryption is more secure and reliable than traditional symmetric encryption. If you are interested in this research, Please move Benefits and principles of dynamic encryption Learn more. *  goto -> https://github.com/love915sss/js-nbed64-base64/blob/master/#Benefits and principles of dynamic encryption
 
 [nbed64StringEncryptEx()]: https://github.com/love915sss/js-nbed64-base64/blob/master/#01-nbed64stringencryptex
 [nbed64StringDecryptEx()]: https://github.com/love915sss/js-nbed64-base64/blob/master/#02-nbed64StringDecryptEx
@@ -81,7 +81,6 @@
 [nbed64StringDecode()]: https://github.com/love915sss/js-nbed64-base64/blob/master/#10-nbed64StringDecode
 [nbed64BinaryEncode()]: https://github.com/love915sss/js-nbed64-base64/blob/master/#11-nbed64BinaryEncode
 [nbed64BinaryDecode()]: https://github.com/love915sss/js-nbed64-base64/blob/master/#12-nbed64BinaryDecode
-[GoTo]: https://github.com/love915sss/js-nbed64-base64/blob/master/#Benefits and principles of dynamic encryption
 
 
 # 相关链接
