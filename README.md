@@ -22,8 +22,8 @@
 [README.md]: https://github.com/love915sss/js-nbed64-base64/blob/master/README.md
 [Click To Read Chinese Version]: https://github.com/love915sss/js-nbed64-base64/blob/master/README.md
 [README.EN.md]: https://github.com/love915sss/js-nbed64-base64/blob/master/README.en.md
-[Click To Read English Version]: https://github.com/love915sss/js-nbed64-base64/blob/master/README.ru.md
-[README.EN.md]: https://github.com/love915sss/js-nbed64-base64/blob/master/README.ru.md
+[Click To Read Russia Version]: https://github.com/love915sss/js-nbed64-base64/blob/master/README.ru.md
+[README.RU.md]: https://github.com/love915sss/js-nbed64-base64/blob/master/README.ru.md
 [Click To Read English Version]: https://github.com/love915sss/js-nbed64-base64/blob/master/README.en.md
 [README.JP.md]: https://github.com/love915sss/js-nbed64-base64/blob/master/README.jp.md
 [Click To Read Japanese Version]: https://github.com/love915sss/js-nbed64-base64/blob/master/README.jp.md
