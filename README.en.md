@@ -84,7 +84,7 @@
 [Benefits and principles of dynamic encryption]: https://github.com/love915sss/js-nbed64-base64/blob/master/README.en.md#benefits-and-principles-of-dynamic-encryption
 
 
-# 相关链接
+# Related Links
 
 ### Nbed64 Open source programming language version on GitHub
 + [C-Nbed64] Authors use C/C++ Language version
@@ -219,19 +219,18 @@ const nbed64StringEncryptEx = (str, key, isUtf8 = true, maskNumber = 32) => { ..
 DEMO：
 
 ```javascript
+	// Statement: The result of dynamic encryption will be different every time
 	let isUtf8 = true;
 	let key = 'Key1234567890++';
-	let text = '这是需要加密的字符串内容--123++bc...';
+	let text = 'This is the string content that needs to be encrypted ...';
 	let base64 = nbed64StringEncryptEx(text, key, isUtf8);
-	console.log('这是动态加密的结果: ' + base64);
-	//  声明： 动态加密的结果每次都会不一样...
-	// console.log -> 这是动态加密的结果: a0uD4iPa_daMUeWm-FL44yEDTbQKG1PbuPE-37C0RWIdAzM2RCCXdAFmN_F1l-UzwWGlB5Gmd5EFhiGVJYG0dNH3x_HFdA19fLycjQFF1cVVVV
-	console.log('再来一次对比试试--: ' + nbed64StringEncryptEx(text, key, isUtf8));
-	// console.log -> 再来一次对比试试--: a0tu7dD78s0LxyfNAZYkHlQywUOtbZNuCDPltOT5W5Ku2Tl8DmC3VCFmN_F1l-WjUfElhxEWxyGlJomdLYG0dNnv3-GFNEW1tHTUxU1J2cYWFh
+	console.log('Results of dynamic encryption : ' + base64);
+	// console.log -> Results of dynamic encryption : a0uJd6EATJExVa2ewU366YsGEUEFIIw9_O8lXfA0ty5FGTm6emBFcejt2Jn5LXBAMFkpWcXB8Tk4mYkIrei5eej9uVmpqbi9iMkN-dntuekZyNlp-bmpvfXV1d
+	console.log('Retry Comparison -------------: ' + nbed64StringEncryptEx(text, key, isUtf8));
+	// console.log -> Retry Comparison -------------: a0vhNploZYEChcZ1JCQV7xyAJlDezRAt8ys_P2_BKSxRMjq5eWjN-Wjt2JV1ofDQoMkpWc35yQk4mYkYvfCxceCl4QGhobBFcDkN-dGl8akZyNDgcDmJnd1dXV
 	let TextDec = nbed64StringDecryptEx(base64, key, isUtf8);
-	console.log('这是动态解密的结果: ' + TextDec);
-	// console.log -> 这是动态解密的结果: 这是需要加密的字符串内容--123++bc...
- */
+	console.log('Results of dynamic decryption :' + TextDec);
+	// console.log -> Results of dynamic decryption :This is the string content that needs to be encrypted ...
 ```
 
 
@@ -256,19 +255,18 @@ const nbed64StringDecryptEx = (base64str, key, isUtf8 = true) => { ... }
 DEMO：
 
 ```javascript
+	// Statement: The result of dynamic encryption will be different every time
 	let isUtf8 = true;
 	let key = 'Key1234567890++';
-	let text = '这是需要加密的字符串内容--123++bc...';
+	let text = 'This is the string content that needs to be encrypted ...';
 	let base64 = nbed64StringEncryptEx(text, key, isUtf8);
-	console.log('这是动态加密的结果: ' + base64);
-	//  声明： 动态加密的结果每次都会不一样...
-	// console.log -> 这是动态加密的结果: a0uD4iPa_daMUeWm-FL44yEDTbQKG1PbuPE-37C0RWIdAzM2RCCXdAFmN_F1l-UzwWGlB5Gmd5EFhiGVJYG0dNH3x_HFdA19fLycjQFF1cVVVV
-	console.log('再来一次对比试试--: ' + nbed64StringEncryptEx(text, key, isUtf8));
-	// console.log -> 再来一次对比试试--: a0tu7dD78s0LxyfNAZYkHlQywUOtbZNuCDPltOT5W5Ku2Tl8DmC3VCFmN_F1l-WjUfElhxEWxyGlJomdLYG0dNnv3-GFNEW1tHTUxU1J2cYWFh
+	console.log('Results of dynamic encryption : ' + base64);
+	// console.log -> Results of dynamic encryption : a0uJd6EATJExVa2ewU366YsGEUEFIIw9_O8lXfA0ty5FGTm6emBFcejt2Jn5LXBAMFkpWcXB8Tk4mYkIrei5eej9uVmpqbi9iMkN-dntuekZyNlp-bmpvfXV1d
+	console.log('Retry Comparison -------------: ' + nbed64StringEncryptEx(text, key, isUtf8));
+	// console.log -> Retry Comparison -------------: a0vhNploZYEChcZ1JCQV7xyAJlDezRAt8ys_P2_BKSxRMjq5eWjN-Wjt2JV1ofDQoMkpWc35yQk4mYkYvfCxceCl4QGhobBFcDkN-dGl8akZyNDgcDmJnd1dXV
 	let TextDec = nbed64StringDecryptEx(base64, key, isUtf8);
-	console.log('这是动态解密的结果: ' + TextDec);
-	// console.log -> 这是动态解密的结果: 这是需要加密的字符串内容--123++bc...
- */
+	console.log('Results of dynamic decryption :' + TextDec);
+	// console.log -> Results of dynamic decryption :This is the string content that needs to be encrypted ...
 ```
 
 
@@ -293,18 +291,17 @@ const nbed64BinaryEncryptEx = (byteArr, key, maskNumber = 32) => { ... }
 DEMO：
 
 ```javascript
+	// Statement: The result of dynamic encryption will be different every time
 	let key = 'Key1234567890++';
 	let mp4 = new Uint8Array([255, 254, 253, 252, 251, 250, 249, 248, 247, 246]);;
 	let base64 = nbed64BinaryEncryptEx(mp4, key);
-	console.log('这是动态加密的结果: ' + base64);
-	// 声明： 动态加密的结果每次都会不一样...
-	// console.log -> 这是动态加密的结果: a0tdkmEjI-6aJlp-aU6wWwtcfmuCBDg-GcRAvSfTu35NFDgIGCAwQFhIWKgX
-	console.log('再来一次对比试试--: ' + nbed64BinaryEncryptEx(mp4, key));
-	// console.log -> 再来一次对比试试--: a0tsO0Go7LbVeH1MaqljRsUo-uC0TOwjIGjCJEgtTwoU5zgIGCAwQFBAUKCf
-	let byteArray = nbed64BinaryDecryptEx(base64, key);
-	console.log('这是动态解密的结果: ' + byteArray);
-	// console.log -> 这是动态解密的结果: 255,254,253,252,251,250,249,248,247,246
- */
+	console.log('Results of dynamic encryption : ' + base64);
+	// console.log -> Results of dynamic encryption : a0svUqijsI2imowGM0cawSzgBL3EKb715b0LfA7sn76QlDEBESAwQFBgcIAf
+	console.log('Retry Comparison ------------ : ' + nbed64BinaryEncryptEx(mp4, key));
+	// console.log -> Retry Comparison ------------ : a0u9gfcjNO5e5y1_ym6PnddhSdyhL8j75Ndsev0I9ZVCUDAAECERYXAgMMgX
+	let TextDec = nbed64BinaryDecryptEx(base64, key);
+	console.log('Results of dynamic decryption :' + TextDec);
+	// console.log -> Results of dynamic decryption :255,254,253,252,251,250,249,248,247,246
 ```
 
 
@@ -328,17 +325,17 @@ const nbed64BinaryDecryptEx = (base64str, key) =>  { ... }
 DEMO：
 
 ```javascript
+	// Statement: The result of dynamic encryption will be different every time
 	let key = 'Key1234567890++';
 	let mp4 = new Uint8Array([255, 254, 253, 252, 251, 250, 249, 248, 247, 246]);;
 	let base64 = nbed64BinaryEncryptEx(mp4, key);
-	console.log('这是动态加密的结果: ' + base64);
-	// 声明： 动态加密的结果每次都会不一样...
-	// console.log -> 这是动态加密的结果: a0tdkmEjI-6aJlp-aU6wWwtcfmuCBDg-GcRAvSfTu35NFDgIGCAwQFhIWKgX
-	console.log('再来一次对比试试--: ' + nbed64BinaryEncryptEx(mp4, key));
-	// console.log -> 再来一次对比试试--: a0tsO0Go7LbVeH1MaqljRsUo-uC0TOwjIGjCJEgtTwoU5zgIGCAwQFBAUKCf
-	let byteArray = nbed64BinaryDecryptEx(base64, key);
-	console.log('这是动态解密的结果: ' + byteArray);
-	// console.log -> 这是动态解密的结果: 255,254,253,252,251,250,249,248,247,246
+	console.log('Results of dynamic encryption : ' + base64);
+	// console.log -> Results of dynamic encryption : a0svUqijsI2imowGM0cawSzgBL3EKb715b0LfA7sn76QlDEBESAwQFBgcIAf
+	console.log('Retry Comparison ------------ : ' + nbed64BinaryEncryptEx(mp4, key));
+	// console.log -> Retry Comparison ------------ : a0u9gfcjNO5e5y1_ym6PnddhSdyhL8j75Ndsev0I9ZVCUDAAECERYXAgMMgX
+	let TextDec = nbed64BinaryDecryptEx(base64, key);
+	console.log('Results of dynamic decryption :' + TextDec);
+	// console.log -> Results of dynamic decryption :255,254,253,252,251,250,249,248,247,246
 ```
 
 
@@ -367,18 +364,19 @@ const nbed64StringEncrypt = (str, key, isUtf8 = true, isRFC4648 = true) =>  { ..
 DEMO：
 
 ```javascript
+	// Statement: The result of symmetric encryption is the same every time and is fixed
 	let isUtf8 = true;
 	let isRFC4648 = true;
 	let key = 'Key1234567890++';
-	let text = '这是需要加密的字符串内容--123++bc...';
+	let text = 'This is the string content that needs to be encrypted ...';
 	let base64 = nbed64StringEncrypt(text, key, isUtf8, isRFC4648);
-	console.log('这是对称加密的结果: ' + base64);
-	// console.log -> 这是对称加密的结果: o_TSg_3KkOX52Zew17iS1py1066w0Jii0ZqQ04-F3b693JeAHR0BGRgAAElIZWVl
-	console.log('再来一次对比试试--: ' + nbed64StringEncrypt(text, key, isUtf8, isRFC4648));
-	// console.log -> 再来一次对比试试  : o_TSg_3KkOX52Zew17iS1py1066w0Jii0ZqQ04-F3b693JeAHR0BGRgAAElIZWVl
+	console.log('Results of symmetric encryption : ' + base64);
+	// console.log -> Results of symmetric encryption : HyMiFkUMClkNWVQRQUZAWl1UFFdbW0FQWEIWQ19WTBhWXFxdQxBERAtJTgtOJSg5HBURHB1ZHx8f
+	console.log('Retry Comparison -------------- : ' + nbed64StringEncrypt(text, key, isUtf8, isRFC4648));
+	// console.log -> Retry Comparison -------------- : HyMiFkUMClkNWVQRQUZAWl1UFFdbW0FQWEIWQ19WTBhWXFxdQxBERAtJTgtOJSg5HBURHB1ZHx8f
 	let TextDec = nbed64StringDecrypt(base64, key, isUtf8);
-	console.log('这是对称解密的结果: ' + TextDec);
-	// console.log -> 这是对称解密的结果: 这是需要加密的字符串内容--123++bc...
+	console.log('Results of symmetric decryption : ' + TextDec);
+	// console.log -> Results of symmetric decryption : This is the string content that needs to be encrypted ...
 ```
 
 
@@ -403,18 +401,19 @@ const nbed64StringDecrypt = (base64str, key, isUtf8 = true) =>  { ... }
 DEMO：
 
 ```javascript
+	// Statement: The result of symmetric encryption is the same every time and is fixed
 	let isUtf8 = true;
 	let isRFC4648 = true;
 	let key = 'Key1234567890++';
-	let text = '这是需要加密的字符串内容--123++bc...';
+	let text = 'This is the string content that needs to be encrypted ...';
 	let base64 = nbed64StringEncrypt(text, key, isUtf8, isRFC4648);
-	console.log('这是对称加密的结果: ' + base64);
-	// console.log -> 这是对称加密的结果: o_TSg_3KkOX52Zew17iS1py1066w0Jii0ZqQ04-F3b693JeAHR0BGRgAAElIZWVl
-	console.log('再来一次对比试试  : ' + nbed64StringEncrypt(text, key, isUtf8, isRFC4648));
-	// console.log -> 再来一次对比试试--: o_TSg_3KkOX52Zew17iS1py1066w0Jii0ZqQ04-F3b693JeAHR0BGRgAAElIZWVl
+	console.log('Results of symmetric encryption : ' + base64);
+	// console.log -> Results of symmetric encryption : HyMiFkUMClkNWVQRQUZAWl1UFFdbW0FQWEIWQ19WTBhWXFxdQxBERAtJTgtOJSg5HBURHB1ZHx8f
+	console.log('Retry Comparison -------------- : ' + nbed64StringEncrypt(text, key, isUtf8, isRFC4648));
+	// console.log -> Retry Comparison -------------- : HyMiFkUMClkNWVQRQUZAWl1UFFdbW0FQWEIWQ19WTBhWXFxdQxBERAtJTgtOJSg5HBURHB1ZHx8f
 	let TextDec = nbed64StringDecrypt(base64, key, isUtf8);
-	console.log('这是对称解密的结果: ' + TextDec);
-	// console.log -> 这是对称解密的结果: 这是需要加密的字符串内容--123++bc...
+	console.log('Results of symmetric decryption : ' + TextDec);
+	// console.log -> Results of symmetric decryption : This is the string content that needs to be encrypted ...
 ```
 
 
@@ -439,17 +438,18 @@ const nbed64BinaryDecrypt = (base64str, key) =>  { ... }
 DEMO：
 
 ```javascript
+	// Statement: The result of symmetric encryption is the same every time and is fixed
 	let isRFC4648 = true;
 	let key = 'Key1234567890++';
 	let mp3 = new Uint8Array([155, 154, 153, 152, 151, 150, 149, 148, 147, 146]);;
 	let base64 = nbed64BinaryEncrypt(mp3, key, isRFC4648);
-	console.log('这是对称加密的结果: ' + base64);
-	// console.log -> 这是对称加密的结果: 0NHS_fLz7O3qoz
-	console.log('再来一次对比试试  : ' + nbed64BinaryEncrypt(mp3, key, isRFC4648));
-	// console.log -> 再来一次对比试试  : 0NHS_fLz7O3qoz
-	let byteArray = nbed64BinaryDecrypt(base64, key);
-	console.log('这是对称解密的结果: ' + byteArray);
-	// console.log -> 155,154,153,152,151,150,149,148,147,146
+	console.log('Results of symmetric encryption : ' + base64);
+	// console.log -> Results of symmetric encryption : 0NHS_fLz7O3qoz
+	console.log('Retry Comparison -------------- : ' + nbed64BinaryEncrypt(mp3, key, isRFC4648));
+	// console.log -> Retry Comparison -------------- : 0NHS_fLz7O3qoz
+	let TextDec = nbed64BinaryDecrypt(base64, key);
+	console.log('Results of symmetric decryption : ' + TextDec);
+	// console.log -> Results of symmetric decryption : 155,154,153,152,151,150,149,148,147,146
 ```
 
 
@@ -473,17 +473,18 @@ const nbed64BinaryDecrypt = (base64str, key) =>  { ... }
 DEMO：
 
 ```javascript
+	// Statement: The result of symmetric encryption is the same every time and is fixed
 	let isRFC4648 = true;
 	let key = 'Key1234567890++';
 	let mp3 = new Uint8Array([155, 154, 153, 152, 151, 150, 149, 148, 147, 146]);;
 	let base64 = nbed64BinaryEncrypt(mp3, key, isRFC4648);
-	console.log('这是对称加密的结果: ' + base64);
-	// console.log -> 这是对称加密的结果: 0NHS_fLz7O3qoz
-	console.log('再来一次对比试试  : ' + nbed64BinaryEncrypt(mp3, key, isRFC4648));
-	// console.log -> 再来一次对比试试  : 0NHS_fLz7O3qoz
-	let byteArray = nbed64BinaryDecrypt(base64, key);
-	console.log('这是对称解密的结果: ' + byteArray);
-	// console.log -> 155,154,153,152,151,150,149,148,147,146
+	console.log('Results of symmetric encryption : ' + base64);
+	// console.log -> Results of symmetric encryption : 0NHS_fLz7O3qoz
+	console.log('Retry Comparison -------------- : ' + nbed64BinaryEncrypt(mp3, key, isRFC4648));
+	// console.log -> Retry Comparison -------------- : 0NHS_fLz7O3qoz
+	let TextDec = nbed64BinaryDecrypt(base64, key);
+	console.log('Results of symmetric decryption : ' + TextDec);
+	// console.log -> Results of symmetric decryption : 155,154,153,152,151,150,149,148,147,146
 ```
 
 
@@ -510,15 +511,16 @@ const nbed64StringEncode = (str, isUtf8 = true, isRFC4648 = true) =>  { ... }
 DEMO：
 
 ```javascript
+	// Statement: Standard Base64 encoding, Support RFC4648 security specification
 	let isUtf8 = true;
 	let isRFC4648 = true;
-	let text = '这是需要编码的字符串内容--Base64...';
+	let text = 'This is the string content to be encoded--Base64...';
 	let base64 = nbed64StringEncode(text, isUtf8, isRFC4648);
-	console.log('这是Base64编码的结果: ' + base64);
-	// console.log -> 这是Base64编码的结果: 6L-Z5piv6ZyA6KaB57yW56CB55qE5a2X56ym5Liy5YaF5a65LS1CYXNlNjQuLi4A
+	console.log('Base64 encoded results : ' + base64);
+	// console.log -> Base64 encoded results : VGhpcyBpcyB0aGUgc3RyaW5nIGNvbnRlbnQgdG8gYmUgZW5jb2RlZC0tQmFzZTY0Li4u
 	let TextDec = nbed64StringDecode(base64, isUtf8);
-	console.log('这是Base64解码的结果: ' + TextDec);
-	// console.log -> 这是Base64解码的结果: 这是需要编码的字符串内容--Base64...
+	console.log('Base64 decoding result : ' + TextDec);
+	// console.log -> Base64 decoding result : This is the string content to be encoded--Base64...
 ```
 
 
@@ -542,15 +544,16 @@ const nbed64StringDecode = (base64str, isUtf8 = true) =>  { ... }
 DEMO：
 
 ```javascript
+	// Statement: Standard Base64 decode, But the performance of this algorithm is very high
 	let isUtf8 = true;
 	let isRFC4648 = true;
-	let text = '这是需要编码的字符串内容--Base64...';
+	let text = 'This is the string content to be encoded--Base64...';
 	let base64 = nbed64StringEncode(text, isUtf8, isRFC4648);
-	console.log('这是Base64编码的结果: ' + base64);
-	// console.log -> 这是Base64编码的结果: 6L-Z5piv6ZyA6KaB57yW56CB55qE5a2X56ym5Liy5YaF5a65LS1CYXNlNjQuLi4A
+	console.log('Base64 encoded results : ' + base64);
+	// console.log -> Base64 encoded results : VGhpcyBpcyB0aGUgc3RyaW5nIGNvbnRlbnQgdG8gYmUgZW5jb2RlZC0tQmFzZTY0Li4u
 	let TextDec = nbed64StringDecode(base64, isUtf8);
-	console.log('这是Base64解码的结果: ' + TextDec);
-	// console.log -> 这是Base64解码的结果: 这是需要编码的字符串内容--Base64...
+	console.log('Base64 decoding result : ' + TextDec);
+	// console.log -> Base64 decoding result : This is the string content to be encoded--Base64...
 ```
 
 
@@ -574,14 +577,15 @@ const nbed64BinaryEncode = (byteArr, isRFC4648 = true) =>  { ... }
 DEMO：
 
 ```javascript
+	// Statement: Standard Base64 encoding, Support RFC4648 security specification
 	let isRFC4648 = true;
 	let image = new Uint8Array([55, 54, 53, 52, 51, 50, 49, 48, 47, 46]);;
 	let base64 = nbed64BinaryEncode(image, isRFC4648);
-	console.log('这是Base64编码的结果: ' + base64);
-	// console.log -> 这是Base64编码的结果: NzY1NDMyMTAvLg
-	let byteArray = nbed64BinaryDecode(base64);
-	console.log('这是Base64解码的结果: ' + byteArray);
-	// console.log -> 这是Base64解码的结果: 55,54,53,52,51,50,49,48,47,46
+	console.log('Base64 encoded results : ' + base64);
+	// console.log -> Base64 encoded results : NzY1NDMyMTAvLg
+	let TextDec = nbed64BinaryDecode(base64);
+	console.log('Base64 decoding result : ' + TextDec);
+	// console.log -> Base64 decoding result : 55,54,53,52,51,50,49,48,47,46
 
 ```
 
@@ -605,14 +609,15 @@ const nbed64BinaryDecode = (base64str) => { ... }
 DEMO：
 
 ```javascript
+	// Statement: Standard Base64 decode, But the performance of this algorithm is very high
 	let isRFC4648 = true;
 	let image = new Uint8Array([55, 54, 53, 52, 51, 50, 49, 48, 47, 46]);;
 	let base64 = nbed64BinaryEncode(image, isRFC4648);
-	console.log('这是Base64编码的结果: ' + base64);
-	// console.log -> 这是Base64编码的结果: NzY1NDMyMTAvLg
-	let byteArray = nbed64BinaryDecode(base64);
-	console.log('这是Base64解码的结果: ' + byteArray);
-	// console.log -> 这是Base64解码的结果: 55,54,53,52,51,50,49,48,47,46
+	console.log('Base64 encoded results : ' + base64);
+	// console.log -> Base64 encoded results : NzY1NDMyMTAvLg
+	let TextDec = nbed64BinaryDecode(base64);
+	console.log('Base64 decoding result : ' + TextDec);
+	// console.log -> Base64 decoding result : 55,54,53,52,51,50,49,48,47,46
 ```
 
 
