@@ -16,9 +16,9 @@
 + [README.KR.md] **한국어 버전입니다**
 
 [README.md]: https://github.com/love915sss/js-Nbed64-base64/README.md
-[README.EN.md]: https://github.com/love915sss/js-Nbed64-base64/README.md
-[README.JP.md]: https://github.com/love915sss/js-Nbed64-base64/README.md
-[README.KR.md]: https://github.com/love915sss/js-Nbed64-base64/README.md
+[README.EN.md]: https://github.com/love915sss/js-Nbed64-base64/README.en.md
+[README.JP.md]: https://github.com/love915sss/js-Nbed64-base64/README.jp.md
+[README.KR.md]: https://github.com/love915sss/js-Nbed64-base64/README.kr.md
 
 
 
