@@ -34,7 +34,7 @@
 
 2. Nbed64 is a set of [multilingual]+[cross-platform] encryption and decryption libraries, Nbed64 is now open source in the following languages: GO, C #, C/C++, Java, Python, JavaScript, PHP, E, And other upcoming programming language versions.This means that, In all major programming languages, Any data encrypted and decrypted using Nbed64,  Data can be exchanged without obstacles. For developers in different languages, Nbed64 function name, Parameter name, Encryption results, They are consistent and unified. let put it another way: Using Nbed64, No matter what language the front-end and back-end developers use, The understanding of the results is unified, There are no differences, No barriers, Data interaction is unified. 
 
-3. Nbed64 is the abbreviation of Network Bridge Encrypt Decrypt Base64, It is a set of universal, open source, cross-language, cross-platform excellent encryption solution library. The origin of this set of algorithms, It was first designed by the CEO of China Network Bridge Network Technology in 2014, There was only one version of C++, Subsequently, it continued to expand and iterate in its company's production environment, It has developed into many language versions today. Therefore, 'nb' refers to the name of the Network Bridge company,  'ed' refers to encryption and decryption, '64' means that the algorithm is based on the Base64 encoding framework.  be careful, Please don't mistake 'nbed' for 'asymmetrical...', Please do not consider 'nbed' as' asymmetric... ' Encryption algorithm, This understanding is wrong! It is emphasized here that,  And the upgraded symmetric encryption scheme, People like to call it: Dynamic encryption scheme! 
+3. Nbed64 is the abbreviation of Network Bridge Encrypt Decrypt Base64, It is a set of universal, open source, cross-language, cross-platform excellent encryption solution library. The origin of this set of algorithms, It was first designed by the CEO of China Network Bridge Network Technology in 2014, There was only one version of C++, Subsequently, it continued to expand and iterate in its company's production environment, It has developed into many language versions today. Therefore, 'nb' refers to the name of the Network Bridge company,  'ed' refers to encryption and decryption, '64' means that the algorithm is based on the Base64 encoding framework. be careful, Please do not mistake "nbed" for "asymmetric..." encryption algorithm, This understanding is wrong! Nbed64 is a symmetric encryption scheme, And the upgraded symmetric encryption scheme, People like to call it: Dynamic encryption scheme! 
 
 4. Nbed64 encodes character sets by internal algorithms, For example: UTF-8, UTF-16, GBK, etc. It does not depend on the API of the running platform, It does not depend on the API of the running environment. This means: The results of running on different platforms such as Windows, Linux, Unix, Mac, Android and Ios are consistent, safe, stable. When you use cross-platform language development, Don't care about the differences between different system platforms, There is no need to care about various coding related API. You can use it out of the box, The coding problem has nothing to do with you. 
 
@@ -56,9 +56,9 @@
 	* [nbed64BinaryDecryptEx()]  Dynamically decrypt binary, And nbed64BinaryEncryptEx() It's a pair
 
 2. Symmetrical encryption and decryption API group
-	* [nbed64StringEncrypt()]  Symmetrical encryption string, The data remains unchanged, The key remains unchanged, **The encryption result remains the same, changeless **
+	* [nbed64StringEncrypt()]  Symmetrical encryption string, The data remains unchanged, The key remains unchanged, **The encryption result remains the same, Never change **
 	* [nbed64StringDecrypt()]  Symmetrical decryption string, And nbed64StringEncrypt() It's a pair
-	* [nbed64BinaryEncrypt()]  Symmetrically encrypted binary, The data remains unchanged, The key remains unchanged, **The encryption result remains the same, changeless **
+	* [nbed64BinaryEncrypt()]  Symmetrically encrypted binary, The data remains unchanged, The key remains unchanged, **The encryption result remains the same, Never change **
 	* [nbed64BinaryDecrypt()]  Symmetrically decrypt binary, And nbed64BinaryEncrypt() It's a pair
 
 3. Standard Base64 encoding and decoding API group
@@ -67,7 +67,7 @@
 	* [nbed64BinaryEncode()]  Standard Base64 encoding, Used as encoding binary, Support RFC4648 security specification
 	* [nbed64BinaryDecode()]  Standard Base64 decoding, Used as decode binary, Support RFC4648 security specification
 
-+ *Statement: Dynamic encryption is an upgraded version of (traditional) symmetric encryption, But in essence, it is symmetric encryption, But in essence, it is still symmetric encryption, However, dynamic encryption is more secure and reliable than traditional symmetric encryption. If you are interested in this research* Goto  [Benefits and principles of dynamic encryption] Learn more. 
++ *Statement: Dynamic encryption is an upgraded version of (traditional) symmetric encryption, But in essence, But in essence, it is still symmetric encryption, However, dynamic encryption is more secure and reliable than traditional symmetric encryption. If you are interested in this research* Goto  [Benefits and principles of dynamic encryption] Learn more. 
 
 [nbed64StringEncryptEx()]: https://github.com/love915sss/js-nbed64-base64/blob/master/#01-nbed64stringencryptex
 [nbed64StringDecryptEx()]: https://github.com/love915sss/js-nbed64-base64/blob/master/#02-nbed64StringDecryptEx
@@ -137,7 +137,7 @@ Local... You need to download and decompress nbed64.zip on GitHub or official we
 
 + *Although the above embedding methods are very convenient, But it is also easy to pollute ` window`，So，It is recommended that you use the following ES6 standard embedding mode...*
 
-### As an ES6 Module，browser || nodejs || uin-app || APICloud
+### As an ES6 Module，Browser || Nodejs || APICloud || Uin-App ( Very popular in China )
 
 Local... You need to download and decompress nbed64.zip on GitHub or official website, then...
 
@@ -503,7 +503,7 @@ Function Prototype:
  * be careful: This refers to the encoding before encryption, not the base64 encoding after encryption. Base64 does not need to be encoded.In other words, this parameter refers to the decrypted string encoding.
  * The default encoding of JS is UTF-16, but UTF-16 is not friendly. Many programming languages and server environments do not support UTF-16.
  * @param isRFC4648 {boolean} Whether to adopt RFC4648 coding mapping specification, The default value is true. Base64 encoded by RFC4648 conforms to URL security, It can be used for HTTP protocol and Ajax requests.
- * @return {string} Encoding result
+ * @return {string} } Encoding results in Base64 format. Statement: This is not encryption
  */
 const nbed64StringEncode = (str, isUtf8 = true, isRFC4648 = true) =>  { ... }
 ```
@@ -569,7 +569,7 @@ Function Prototype:
  * Nbed64 Encode binary data（ be careful: This is encoding, not encryption ， （ This function And nbed64BinaryDecode() It's a pair )
  * @param byteArr {ByteArray} Source data. Binary byte array, such as video, audio, pictures, files, etc.
  * @param isRFC4648 {boolean} Whether to adopt RFC4648 coding mapping specification, The default value is true. Base64 encoded by RFC4648 conforms to URL security, It can be used for HTTP protocol and Ajax requests.
- * @return {string} Encoding result
+ * @return {string} Encoding results in Base64 format. Statement: This is not encryption
  */
 const nbed64BinaryEncode = (byteArr, isRFC4648 = true) =>  { ... }
 ```
