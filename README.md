@@ -2,15 +2,15 @@
 
 # README 语言 || Language || 言語 || 언어
 
-　　　　CN : *自述文件支持以下语种，其中，中文为作者的母语，因此表达分歧最少！如果您有能力阅读中文，请尽量阅读中文版的 README.md。谢谢！！！*
+　　　　CN : *自述文件支持以下语种，其中，中文为作者的母语，因此表达分歧最少！如果您有能力阅读中文，请尽量阅读中文版的 README.md。谢谢！！！* [Click To Read Chinese Version]
 
-　　　　EN : *The readme file supports the following languages, of which Chinese is the author's native language, so the expression differences are the least! If you have the ability to read Chinese, please try to read the Chinese version of README.md. thank you !!!*
+　　　　EN : *The readme file supports the following languages, of which Chinese is the author's native language, so the expression differences are the least! If you have the ability to read Chinese, please try to read the Chinese version of README.md. thank you !!!* [Click To Read English Version]
 
-	RU :  Самоописанные документы поддерживают следующие языки, из которых китайский является родным языком автора, поэтому выражают наименьшее количество разногласий!  Если вы умеете читать по - китайски, попробуйте прочитать китайскую версию README.md.  Спасибо. 
+　　　　RU :  *Самоописанные документы поддерживают следующие языки, из которых китайский является родным языком автора, поэтому выражают наименьшее количество разногласий!  Если вы умеете читать по - китайски, попробуйте прочитать китайскую версию README.md.  Спасибо. * [Click To Read Russia Version]
 
-　　　　JP  : *Readmeファイルは次の言語をサポートしています、ここで、中国語は著者の母国語であり、そのため、表現の違いが最も少ない！中国語を読む能力があれば、できるだけ中国語版のREADME.mdを読んでください。ありがとうございます！！！*
+　　　　JP  : *Readmeファイルは次の言語をサポートしています、ここで、中国語は著者の母国語であり、そのため、表現の違いが最も少ない！中国語を読む能力があれば、できるだけ中国語版のREADME.mdを読んでください。ありがとうございます！！！* [Click To Read Japanese Version]
 
-　　　　KR : *자술문건은 다음과 같은 언어를 지원하는데 그중 중국어는 저자의 모국어이기에 표현의견상이가 가장 적다.중국어를 읽을 수 있는 능력이 있다면 가능한 한 중국어판 README.md를 읽으십시오.감사합니다 ! ! !*
+　　　　KR : *자술문건은 다음과 같은 언어를 지원하는데 그중 중국어는 저자의 모국어이기에 표현의견상이가 가장 적다.중국어를 읽을 수 있는 능력이 있다면 가능한 한 중국어판 README.md를 읽으십시오.감사합니다 ! ! !* [Click To Read Korean Version]
 
 
 + [README.md] **这是简体中文版（默认）** ---------------> [Click To Read Chinese Version]
