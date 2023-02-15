@@ -31,9 +31,9 @@
 	* [nbed64BinaryDecryptEx()]  Dynamically decrypt binary, And nbed64BinaryEncryptEx() It's a pair
 
 2. Symmetrical encryption and decryption API group
-	* [nbed64StringEncrypt()]  Symmetrical encryption string, The data remains unchanged, The key remains unchanged, **The encryption result remains the same, Never change **
+	* [nbed64StringEncrypt()]  Symmetrical encryption string, The data remains unchanged, The key remains unchanged, **The encryption result remains the same, Never change**
 	* [nbed64StringDecrypt()]  Symmetrical decryption string, And nbed64StringEncrypt() It's a pair
-	* [nbed64BinaryEncrypt()]  Symmetrically encrypted binary, The data remains unchanged, The key remains unchanged, **The encryption result remains the same, Never change **
+	* [nbed64BinaryEncrypt()]  Symmetrically encrypted binary, The data remains unchanged, The key remains unchanged, **The encryption result remains the same, Never change**
 	* [nbed64BinaryDecrypt()]  Symmetrically decrypt binary, And nbed64BinaryEncrypt() It's a pair
 
 3. Standard Base64 encoding and decoding API group
