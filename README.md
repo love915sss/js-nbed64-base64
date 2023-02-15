@@ -22,7 +22,7 @@
 
 # Nbed64 Main capabilities of encryption and decryption scheme
 
-### Nbed64 A total of 12 APIs are provided, which are divided into 3 groups with 4 APIs in each group. Respectively:
+### Nbed64 A total of 12 API are provided, which are divided into 3 groups with 4 API in each group. Respectively:
 
 1. Dynamic encryption and decryption API group
 	* [nbed64StringEncryptEx()]  Dynamic encryption string, The data remains unchanged, The key remains unchanged, **However, the encryption results are not repeated,That is, the result of each execution will change**
