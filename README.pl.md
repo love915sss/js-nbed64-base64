@@ -76,7 +76,7 @@
 
 7. Although the algorithm of Nbed64 is based on the Base64 encoding framework, However, the algorithm has been greatly optimized, The performance is much higher than the traditional Base64 algorithm. The author has made comparisons under multiple platforms, Take 10MB test data as an example, Nbed64 decrypted data is more than 100 times faster than the traditional base64 decoded data on average! The main reasons are: When traditional Base64 decoding, Find the index by traversing the string in the Base64 mapping table, Nbed64 directly deduces the index through calculation, Therefore, a layer of for () loop is reduced, Plus other optimizations, The performance has been greatly improved. After pressure test, Even in mobile browsers, Using nbed64.js to encrypt (encode) 512MB of data can also achieve fast results，In C/C++, JAVA and other languages, Performance is naturally faster and better.
 
-8. Nbed64 uses BSD open source protocol----BSD is one of the most friendly open source protocols today. This means: Any individual, organization, enterprise or institution can modify it at will, Forwarding, sharing, commercial use Nbed64 encryption library.
+8. Nbed64 uses Apache License 2.0 open source protocol----Apache License 2.0 is one of the most friendly open source protocols today. This means: Any individual, organization, enterprise or institution can modify it at will, Forwarding, sharing, commercial use Nbed64 encryption library.
 
 
 
@@ -93,7 +93,7 @@
 
 + *Statement: Because writing Demo and README requires a lot of time and effort, Therefore, the author cannot Push all the above language versions in a short time. but don't worry, The author will not relax the schedule and change the plan,  It is only a matter of time to fill the vacancy.*
 
-[c-Nbed64]: https://github.com/love915sss/c-Nbed64-base64/
+[c-Nbed64]: https://github.com/love915sss/js-nbed64-base64/
 [Go-Nbed64]: https://github.com/love915sss/Go-Nbed64-base64/
 [JS-Nbed64]: https://github.com/love915sss/js-nbed64-base64/
 [CS-Nbed64]: https://github.com/love915sss/CS-Nbed64-base64/
@@ -125,8 +125,8 @@ Local... You need to download and decompress nbed64.zip on GitHub or official we
 … or Directly from CDN.In this way, you do not have to download and install.
 
 ```html
-<script src="https://nbed64.oss-cn-hongkong.aliyuncs.com/nbed64.se5.all.js">/* Full version - used in the research environment */</script>
-<script src="https://nbed64.oss-cn-hongkong.aliyuncs.com/nbed64.se5.min.js">/* Compressed version - used in production environment */</script>
+<script src="https://nbed64.oss-cn-hongkong.aliyuncs.com/nbed64.es5.all.js">/* Full version - used in the research environment */</script>
+<script src="https://nbed64.oss-cn-hongkong.aliyuncs.com/nbed64.es5.min.js">/* Compressed version - used in production environment */</script>
 ```
 
 + *Although the above embedding methods are very convenient, But it is also easy to pollute ` window`，So，It is recommended that you use the following ES6 standard embedding mode...*
@@ -164,7 +164,7 @@ Local... You need to download and decompress nbed64.zip on GitHub or official we
 
 
 ```javascript
-	import * as nbed64 from 'https://nbed64.oss-cn-hongkong.aliyuncs.com/Nbed64 .es6.min';
+	import * as nbed64 from 'https://nbed64.oss-cn-hongkong.aliyuncs.com/nbed64.es6.min';
 ```
 
 + *or*
