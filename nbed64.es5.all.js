@@ -1,5 +1,5 @@
 /**
- * BSD开源协议 && BSD open source agreement
+ * Apache License 2.0 开源协议 && Apache License 2.0  open source agreement
  * Gitee: https://gitee.com/love915sss/js-nbed64-base64
  * GitHub： https://github.com/love915sss/js-nbed64-base64/
  * Author Blog: https://blog.csdn.net/qq_16661383?type=blog
