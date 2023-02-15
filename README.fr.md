@@ -22,7 +22,7 @@
 
 # Nbed64 Main capabilities of encryption and decryption scheme
 
-### Nbed64 A total of 12 APIs are provided, which are divided into 3 groups with 4 APIs in each group. Respectively:
+### Nbed64 A total of 12 API are provided, which are divided into 3 groups with 4 API in each group. Respectively:
 
 1. Dynamic encryption and decryption API group
 	* [nbed64StringEncryptEx()]  Dynamic encryption string, The data remains unchanged, The key remains unchanged, **However, the encryption results are not repeated,That is, the result of each execution will change**
@@ -31,9 +31,9 @@
 	* [nbed64BinaryDecryptEx()]  Dynamically decrypt binary, And nbed64BinaryEncryptEx() It's a pair
 
 2. Symmetrical encryption and decryption API group
-	* [nbed64StringEncrypt()]  Symmetrical encryption string, The data remains unchanged, The key remains unchanged, **The encryption result remains the same, Never change **
+	* [nbed64StringEncrypt()]  Symmetrical encryption string, The data remains unchanged, The key remains unchanged, **The encryption result remains the same, Never change**
 	* [nbed64StringDecrypt()]  Symmetrical decryption string, And nbed64StringEncrypt() It's a pair
-	* [nbed64BinaryEncrypt()]  Symmetrically encrypted binary, The data remains unchanged, The key remains unchanged, **The encryption result remains the same, Never change **
+	* [nbed64BinaryEncrypt()]  Symmetrically encrypted binary, The data remains unchanged, The key remains unchanged, **The encryption result remains the same, Never change**
 	* [nbed64BinaryDecrypt()]  Symmetrically decrypt binary, And nbed64BinaryEncrypt() It's a pair
 
 3. Standard Base64 encoding and decoding API group
@@ -86,7 +86,6 @@
 + [C-Nbed64] Authors use C/C++ Language version
 + [Go-Nbed64] Authors use Golang Language version
 + [JS-Nbed64] Authors use JavaScript Language version
-+ [VB-Nbed64] Authors use Visual Basic Language version
 + [CS-Nbed64] Authors use C Sharp |  C# Language version
 + [PHP-Nbed64] Authors use PHP Language version
 + [JAVA-Nbed64] Authors use JAVA Language version
@@ -97,7 +96,6 @@
 [c-Nbed64]: https://github.com/love915sss/c-Nbed64-base64/
 [Go-Nbed64]: https://github.com/love915sss/Go-Nbed64-base64/
 [JS-Nbed64]: https://github.com/love915sss/js-nbed64-base64/
-[VB-Nbed64]: https://github.com/love915sss/VB-Nbed64-base64/
 [CS-Nbed64]: https://github.com/love915sss/CS-Nbed64-base64/
 [PHP-Nbed64]: https://github.com/love915sss/PHP-Nbed64-base64/
 [JAVA-Nbed64]: https://github.com/love915sss/JAVA-Nbed64-base64/
@@ -196,7 +194,7 @@ Local... You need to download and decompress nbed64.zip on GitHub or official we
 
 ### nbed64StringEncryptEx() Be used as dynamic encryption string, The data remains unchanged, The key remains unchanged, **But the encryption result is not repeated**
 
-Function Prototype:
++ Function Prototype:
 
 ```javascript
 /**
@@ -212,7 +210,7 @@ Function Prototype:
 const nbed64StringEncryptEx = (str, key, isUtf8 = true, maskNumber = 32) => { ... }
 ```
 
-DEMO：
++ DEMO：
 
 ```javascript
 	// Statement: The result of dynamic encryption will be different every time
@@ -235,7 +233,7 @@ DEMO：
 
 ### nbed64StringDecryptEx() Be used as Dynamic decryption string （ This function And nbed64StringEncryptEx() It's a pair )
 
-Function Prototype:
++ Function Prototype:
 
 ```javascript
 /**
@@ -248,7 +246,7 @@ Function Prototype:
 const nbed64StringDecryptEx = (base64str, key, isUtf8 = true) => { ... }
 ```
 
-DEMO：
++ DEMO：
 
 ```javascript
 	// Statement: The result of dynamic encryption will be different every time
@@ -271,7 +269,7 @@ DEMO：
 
 ### nbed64BinaryEncryptEx() Be used as Dynamically encrypt binary, The data remains unchanged, The key remains unchanged, **But the encryption result is not repeated**
 
-Function Prototype:
++ Function Prototype:
 
 ```javascript
 /**
@@ -284,7 +282,7 @@ Function Prototype:
 const nbed64BinaryEncryptEx = (byteArr, key, maskNumber = 32) => { ... }
 ```
 
-DEMO：
++ DEMO：
 
 ```javascript
 	// Statement: The result of dynamic encryption will be different every time
@@ -306,7 +304,7 @@ DEMO：
 
 ### nbed64BinaryDecryptEx() Be used as Dynamically decrypt binary, And nbed64BinaryEncryptEx() It's a pair
 
-Function Prototype:
++ Function Prototype:
 
 ```javascript
 /**
@@ -318,7 +316,7 @@ Function Prototype:
 const nbed64BinaryDecryptEx = (base64str, key) =>  { ... }
 ```
 
-DEMO：
++ DEMO：
 
 ```javascript
 	// Statement: The result of dynamic encryption will be different every time
@@ -340,7 +338,7 @@ DEMO：
 
 ### nbed64StringEncrypt() Be used as Symmetrical encryption string, The data remains unchanged, The key remains unchanged, **The encryption result remains the same, changeless**
 
-Function Prototype:
++ Function Prototype:
 
 ```javascript
 /**
@@ -357,7 +355,7 @@ Function Prototype:
 const nbed64StringEncrypt = (str, key, isUtf8 = true, isRFC4648 = true) =>  { ... }
 ```
 
-DEMO：
++ DEMO：
 
 ```javascript
 	// Statement: The result of symmetric encryption is the same every time and is fixed
@@ -381,7 +379,7 @@ DEMO：
 
 ### nbed64StringDecrypt() Be used as Symmetrical decryption string, And nbed64StringEncrypt() It's a pair
 
-Function Prototype:
++ Function Prototype:
 
 ```javascript
 /**
@@ -394,7 +392,7 @@ Function Prototype:
 const nbed64StringDecrypt = (base64str, key, isUtf8 = true) =>  { ... }
 ```
 
-DEMO：
++ DEMO：
 
 ```javascript
 	// Statement: The result of symmetric encryption is the same every time and is fixed
@@ -418,7 +416,7 @@ DEMO：
 
 ### nbed64BinaryEncrypt() Be used as Symmetrically encrypted binary, The data remains unchanged, The key remains unchanged, **The encryption result remains the same, changeless**
 
-Function Prototype:
++ Function Prototype:
 
 ```javascript
 /**
@@ -431,7 +429,7 @@ Function Prototype:
 const nbed64BinaryDecrypt = (base64str, key) =>  { ... }
 ```
 
-DEMO：
++ DEMO：
 
 ```javascript
 	// Statement: The result of symmetric encryption is the same every time and is fixed
@@ -454,7 +452,7 @@ DEMO：
 
 ### nbed64BinaryDecrypt() Be used as Symmetrically decrypt binary, And nbed64BinaryEncrypt() It's a pair
 
-Function Prototype:
++ Function Prototype:
 
 ```javascript
 /**
@@ -466,7 +464,7 @@ Function Prototype:
 const nbed64BinaryDecrypt = (base64str, key) =>  { ... }
 ```
 
-DEMO：
++ DEMO：
 
 ```javascript
 	// Statement: The result of symmetric encryption is the same every time and is fixed
@@ -489,7 +487,7 @@ DEMO：
 
 ### nbed64StringEncode() Standard Base64 encoding, Used as encoding string, Support RFC4648 security specification
 
-Function Prototype:
++ Function Prototype:
 
 ```javascript
 /**
@@ -504,7 +502,7 @@ Function Prototype:
 const nbed64StringEncode = (str, isUtf8 = true, isRFC4648 = true) =>  { ... }
 ```
 
-DEMO：
++ DEMO：
 
 ```javascript
 	// Statement: Standard Base64 encoding, Support RFC4648 security specification
@@ -525,7 +523,7 @@ DEMO：
 
 ### nbed64StringDecode() Standard Base64 decoding, Used as decoding string, Support RFC4648 security specification
 
-Function Prototype:
++ Function Prototype:
 
 ```javascript
 /**
@@ -537,7 +535,7 @@ Function Prototype:
 const nbed64StringDecode = (base64str, isUtf8 = true) =>  { ... }
 ```
 
-DEMO：
++ DEMO：
 
 ```javascript
 	// Statement: Standard Base64 decode, But the performance of this algorithm is very high
@@ -558,7 +556,7 @@ DEMO：
 
 ### nbed64BinaryEncode() Standard Base64 encoding, Used as encoding binary, Support RFC4648 security specification
 
-Function Prototype:
++ Function Prototype:
 
 ```javascript
 /**
@@ -570,7 +568,7 @@ Function Prototype:
 const nbed64BinaryEncode = (byteArr, isRFC4648 = true) =>  { ... }
 ```
 
-DEMO：
++ DEMO：
 
 ```javascript
 	// Statement: Standard Base64 encoding, Support RFC4648 security specification
@@ -591,7 +589,7 @@ DEMO：
 
 ### nbed64BinaryDecode() Standard Base64 decoding, Used as decode binary, Support RFC4648 security specification
 
-Function Prototype:
++ Function Prototype:
 
 ```javascript
 /**
@@ -602,7 +600,7 @@ Function Prototype:
 const nbed64BinaryDecode = (base64str) => { ... }
 ```
 
-DEMO：
++ DEMO：
 
 ```javascript
 	// Statement: Standard Base64 decode, But the performance of this algorithm is very high
