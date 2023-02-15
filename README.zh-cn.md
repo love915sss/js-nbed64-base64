@@ -44,19 +44,19 @@
 
 *备注：动态加密是(传统)对称加密的升级版，但本质上，它还是对称加密，但它比传统的对称加密更加安全可靠。如果您对此有研究兴趣，请您移步 *[动态加密的作用和原理]*了解更多详情。*
 
-[nbed64StringEncryptEx()]: https://github.com/love915sss/js-Nbed64-base64/#01-nbed64stringencryptex
-[nbed64StringDecryptEx()]: https://github.com/love915sss/js-Nbed64-base64/#02-nbed64StringDecryptEx
-[nbed64BinaryEncryptEx()]: https://github.com/love915sss/js-Nbed64-base64/#03-nbed64BinaryEncryptEx
-[nbed64BinaryDecryptEx()]: https://github.com/love915sss/js-Nbed64-base64/#04-nbed64BinaryDecryptEx
-[nbed64StringEncrypt()]: https://github.com/love915sss/js-Nbed64-base64/#05-nbed64StringEncrypt
-[nbed64StringDecrypt()]: https://github.com/love915sss/js-Nbed64-base64/#06-nbed64StringDecrypt
-[nbed64BinaryEncrypt()]: https://github.com/love915sss/js-Nbed64-base64/#07-nbed64BinaryEncrypt
-[nbed64BinaryDecrypt()]: https://github.com/love915sss/js-Nbed64-base64/#08-nbed64BinaryDecrypt
-[nbed64StringEncode()]: https://github.com/love915sss/js-Nbed64-base64/#09-nbed64StringEncode
-[nbed64StringDecode()]: https://github.com/love915sss/js-Nbed64-base64/#10-nbed64StringDecode
-[nbed64BinaryEncode()]: https://github.com/love915sss/js-Nbed64-base64/#11-nbed64BinaryEncode
-[nbed64BinaryDecode()]: https://github.com/love915sss/js-Nbed64-base64/#12-nbed64BinaryDecode
-[动态加密的作用和原理]: https://github.com/love915sss/js-Nbed64-base64/#动态加密的作用和原理
+[nbed64StringEncryptEx()]: https://github.com/love915sss/js-nbed64-base64/#01-nbed64stringencryptex
+[nbed64StringDecryptEx()]: https://github.com/love915sss/js-nbed64-base64/#02-nbed64StringDecryptEx
+[nbed64BinaryEncryptEx()]: https://github.com/love915sss/js-nbed64-base64/#03-nbed64BinaryEncryptEx
+[nbed64BinaryDecryptEx()]: https://github.com/love915sss/js-nbed64-base64/#04-nbed64BinaryDecryptEx
+[nbed64StringEncrypt()]: https://github.com/love915sss/js-nbed64-base64/#05-nbed64StringEncrypt
+[nbed64StringDecrypt()]: https://github.com/love915sss/js-nbed64-base64/#06-nbed64StringDecrypt
+[nbed64BinaryEncrypt()]: https://github.com/love915sss/js-nbed64-base64/#07-nbed64BinaryEncrypt
+[nbed64BinaryDecrypt()]: https://github.com/love915sss/js-nbed64-base64/#08-nbed64BinaryDecrypt
+[nbed64StringEncode()]: https://github.com/love915sss/js-nbed64-base64/#09-nbed64StringEncode
+[nbed64StringDecode()]: https://github.com/love915sss/js-nbed64-base64/#10-nbed64StringDecode
+[nbed64BinaryEncode()]: https://github.com/love915sss/js-nbed64-base64/#11-nbed64BinaryEncode
+[nbed64BinaryDecode()]: https://github.com/love915sss/js-nbed64-base64/#12-nbed64BinaryDecode
+[动态加密的作用和原理]: https://github.com/love915sss/js-nbed64-base64/#动态加密的作用和原理
 
 
 
@@ -76,7 +76,7 @@
 
 7. Nbed64的算法虽然基于Base64编码框架，但算法经过大量优化，性能远高于传统的Base64算法。作者曾在多平台下作过对比，各以10MB测试数据为例，Nbed64解密数据平均比传统的base64解码数据快100倍以上！主要原因是：传统的Base64解码时，通过遍历查找Base64映射表中的字符串来寻址，而Nbed64直接通过计算推导来寻址，因此少了一层for()循环，再加上其它各种优化，性能便有了极大的提升。经过压力测试，即使在移动浏览器中使用JavaScript编码512MB的数据也迅捷快速、毫无压力，其它语言和平台的性能自不必多说了。
 
-8. Nbed64使用BSD开源协议----BSD是当今最友好的开源协议之一。这意味着：任何个人、组织、企业、机构都可以随意修改、转发、共享、商用 Nbed64加密库...
+8. Nbed64使用Apache License 2.0 开源协议----Apache License 2.0 是当今最友好的开源协议之一。这意味着：任何个人、组织、企业、机构都可以随意修改、转发、共享、商用 Nbed64加密库...
 
 
 
@@ -94,9 +94,9 @@
 
 *备注：由于编写Demo和README需要大量的时间和精力，因此作者无法在短期内将以上所有的语种版本全部Push。不过别担心，作者不会放松进度和改变计划，弥补空缺只是时间问题....*
 
-[c-Nbed64]: https://github.com/love915sss/c-Nbed64-base64/
+[c-Nbed64]: https://github.com/love915sss/js-nbed64-base64/
 [Go-Nbed64]: https://github.com/love915sss/Go-Nbed64-base64/
-[JS-Nbed64]: https://github.com/love915sss/JS-Nbed64-base64/
+[JS-Nbed64]: https://github.com/love915sss/js-nbed64-base64/
 [VB-Nbed64]: https://github.com/love915sss/VB-Nbed64-base64/
 [CS-Nbed64]: https://github.com/love915sss/CS-Nbed64-base64/
 [PHP-Nbed64]: https://github.com/love915sss/PHP-Nbed64-base64/
@@ -127,8 +127,8 @@ $ npm install --save js-nbed64
 … 或直接从CDN。在这种方式下，您不必下载和安装。
 
 ```html
-<script src="https://nbed64.oss-cn-hongkong.aliyuncs.com/nbed64.se5.all.js">/*完整版----研究环境时使用*/</script>
-<script src="https://nbed64.oss-cn-hongkong.aliyuncs.com/nbed64.se5.min.js">/*迷你版----生产环境时使用*/</script>
+<script src="https://nbed64.oss-cn-hongkong.aliyuncs.com/nbed64.es5.all.js">/*完整版----研究环境时使用*/</script>
+<script src="https://nbed64.oss-cn-hongkong.aliyuncs.com/nbed64.es5.min.js">/*迷你版----生产环境时使用*/</script>
 ```
 
 *以上引用方式虽然很方便，但也很容易污染`window`，因此，我推荐您使用下面ES6规范标准的引入模式...*
@@ -166,7 +166,7 @@ $ npm install --save js-nbed64
 
 
 ```javascript
-	import * as nbed64 from 'https://nbed64.oss-cn-hongkong.aliyuncs.com/Nbed64 .es6.min';
+	import * as nbed64 from 'https://nbed64.oss-cn-hongkong.aliyuncs.com/nbed64.es6.min';
 ```
 
 *或者*
