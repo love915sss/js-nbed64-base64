@@ -10,7 +10,7 @@
 
 [English]: https://github.com/love915sss/js-nbed64-base64/README.md
 [简体中文]: https://github.com/love915sss/js-nbed64-base64/README.zh-cn.md
-[繁体中文]: https://github.com/love915sss/js-nbed64-base64/README.zh-tw.md
+[繁體中文]: https://github.com/love915sss/js-nbed64-base64/README.zh-tw.md
 [日本語]: https://github.com/love915sss/js-nbed64-base64/README.ja.md
 [한국어]: https://github.com/love915sss/js-nbed64-base64/README.kr.md
 [Polski]: https://github.com/love915sss/js-nbed64-base64/README.pl.md
