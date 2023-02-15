@@ -16,7 +16,7 @@
 [Polski]: https://github.com/love915sss/js-nbed64-base64/README.pl.md
 [Français]: https://github.com/love915sss/js-nbed64-base64/README.fr.md
 [Español]: https://github.com/love915sss/js-nbed64-base64/README.es.md
-[Portugu]: https://github.com/love915sss/js-nbed64-base64/README.pt.md
+[Português]: https://github.com/love915sss/js-nbed64-base64/README.pt.md
 
 
 
